@@ -1,0 +1,37 @@
+/* header */
+
+.hamada-logo {
+  color: var(--my-dark-blue);
+}
+.fa-magnifying-glass {
+  color: var(--my-primary);
+}
+.h-search {
+  border: solid 1px;
+}
+.my-btn-praimary {
+  color: white!important;
+  background-color: var(--my-primary);
+  transition: all 0.3 ease-in-out;
+}
+.my-btn-praimary:hover {
+  background-color: var(--my-primary-hover);
+}
+.my-btn-praimary:focus{
+  border: none;
+  background-color: var(--my-primary-hover);
+}
+.cart-count {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.45rem;
+}
+
+
+@media screen and (max-width: 300px){
+  .hamada-logo span{
+    display: none;
+  }
+  .hamada-logo img{
+    width: 100%!important;
+  }
+}
