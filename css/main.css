@@ -9,29 +9,37 @@
 .h-search {
   border: solid 1px;
 }
-.my-btn-praimary {
-  color: white!important;
+.my-btn-primary {
+  color: white !important;
   background-color: var(--my-primary);
-  transition: all 0.3 ease-in-out;
-}
-.my-btn-praimary:hover {
-  background-color: var(--my-primary-hover);
-}
-.my-btn-praimary:focus{
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
   border: none;
+}
+.my-btn-primary:hover {
   background-color: var(--my-primary-hover);
+}
+.my-btn-primary:focus {
+  border: none;
+}
+.my-btn-primary:active {
+  color: #fff;
+  background-color: var(--my-primary-hover)!important;
 }
 .cart-count {
   font-size: 0.7rem;
   padding: 0.1rem 0.45rem;
 }
+/* fix transition */
+.right-side{
+  flex-basis: auto;
+}
 
-
-@media screen and (max-width: 300px){
-  .hamada-logo span{
+@media screen and (max-width: 300px) {
+  .hamada-logo span {
     display: none;
   }
-  .hamada-logo img{
-    width: 100%!important;
+  .hamada-logo img {
+    width: 100% !important;
   }
 }
