@@ -6,6 +6,16 @@
 .fa-magnifying-glass {
   color: var(--my-primary);
 }
+header .nav-link,
+header .nav-link:focus {
+  transition: all 0.3s ease-in-out;
+  color: var(--my-med-blue);
+}
+header .nav-link:hover,
+header .nav-link:active {
+  color: var(--my-primary);
+}
+
 .h-search {
   border: solid 1px;
 }
@@ -24,14 +34,14 @@
 }
 .my-btn-primary:active {
   color: #fff;
-  background-color: var(--my-primary-hover)!important;
+  background-color: var(--my-primary-hover) !important;
 }
 .cart-count {
   font-size: 0.7rem;
   padding: 0.1rem 0.45rem;
 }
 /* fix transition */
-.right-side{
+.right-side {
   flex-basis: auto;
 }
 
@@ -44,26 +54,41 @@
   }
 }
 
-
-
 /* footer */
-.footer-logo{
+.footer-logo {
   color: var(--my-dark-blue);
 }
-.social-media-a{
-  color :var(--gray-icon);
-  border: solid 0.5px var(--gray-icon);
-  padding: 0.1rem 0.2rem ;
+.social-media-a {
+  color: var(--gray-icon);
+  outline: solid 0.5px var(--gray-icon);
+  padding: 0.1rem 0.2rem;
+  background-color: transparent;
+    transition: all 0.3s ease-in-out;
 }
 
-footer .nav-link{
+.social-media-a:hover,
+.social-media-a:focus,
+.social-media-a:active {
+  background-color: var(--my-primary-hover);
+  color: #fff;
+  outline: none;
+}
+
+footer .nav-link,
+footer .nav-link:active,
+footer .nav-link:focus {
   color: var(--my-med-blue);
   padding-right: 0px;
+  transition: all 0.3s ease-in-out;
 }
 
+footer .nav-link:hover {
+  color: var(--my-med-blue);
+  padding-right: 0px;
+  text-decoration: underline;
+}
 @media screen and (max-width: 250px) {
   .footer-logo span {
     display: none;
   }
 }
-
