@@ -2,9 +2,10 @@
   --h-font: "Playfair Display", serif;
   --roboto-font: Roboto, sans-serif;
   --my-primary: #fe1716;
-  --my-dark-blue: #030150;
+  --my-dark-blue: #222f54;
   --my-med-blue: #454f6c;
   --my-primary-hover: #cf0e0e;
+  --gray-icon:#9499a6;
 }
 h1,
 h2,
@@ -24,13 +25,4 @@ body {
   color: var(--my-primary);
 }
 
-.display-7 {
-  font-weight: 300;
-  line-height: 1.2;
-  font-size: calc(1rem + 1.5vw);
-}
-.display-8 {
-  font-weight: 300;
-  line-height: 1.2;
-  font-size: calc(0.8rem + 1vw);
-}
+

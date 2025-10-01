@@ -35,7 +35,7 @@
   flex-basis: auto;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 341px) {
   .hamada-logo span {
     display: none;
   }
@@ -43,3 +43,27 @@
     width: 100% !important;
   }
 }
+
+
+
+/* footer */
+.footer-logo{
+  color: var(--my-dark-blue);
+}
+.social-media-a{
+  color :var(--gray-icon);
+  border: solid 0.5px var(--gray-icon);
+  padding: 0.1rem 0.2rem ;
+}
+
+footer .nav-link{
+  color: var(--my-med-blue);
+  padding-right: 0px;
+}
+
+@media screen and (max-width: 250px) {
+  .footer-logo span {
+    display: none;
+  }
+}
+
