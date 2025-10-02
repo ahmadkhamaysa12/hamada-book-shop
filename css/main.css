@@ -1,5 +1,10 @@
 /* header */
-
+.faragh {
+  height: 5000px;
+}
+.hamada-logo-svg {
+  stroke: var(--my-primary);
+}
 .hamada-logo {
   color: var(--my-dark-blue);
 }
@@ -19,6 +24,7 @@ header .nav-link:active {
 .h-search {
   border: solid 1px;
 }
+/* my btn */
 .my-btn-primary {
   color: white !important;
   background-color: var(--my-primary);
@@ -37,35 +43,78 @@ header .nav-link:active {
   color: #fff;
   background-color: var(--my-primary-hover) !important;
 }
+
+/* my close btn */
+.my-close-open-btn {
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem;
+}
+.my-close-open-btn:hover {
+  background-color: var(--my-primary-hover);
+}
+/* close and open svg  */
+.my-close-open-btn svg path {
+  fill: var(--my-primary);
+}
+
+.my-close-open-btn:hover svg path {
+  fill: #fff;
+}
+/* offcanvas links */
 .cart-count {
   font-size: 0.7rem;
   padding: 0.1rem 0.45rem;
 }
-
-.pages-navbar .nav-link {
-  color: var(--my-dark-blue);
+.right-side .header-off-c li {
+  margin-bottom: 1rem;
 }
-
-.right-side .dropdown li {
+.right-side .header-off-c li a {
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
   color: var(--my-dark-blue);
-  margin-bottom: 0.3rem;
+
+}
+.right-side .header-off-c li a {
+  border-radius: var(--bs-border-radius-xxl);
+  transition: all 0.1s ease-in-out;
+}
+.right-side .header-off-c li a:not(.cart-link):active,
+.right-side .header-off-c li a:not(.cart-link):focus,
+.right-side .header-off-c li a:not(.cart-link):hover {
+  color: #fff;
+  background-color: var(--my-primary) !important;
+  border-radius: var(--bs-border-radius-xxl);
 }
 
 /* fix transition */
 .right-side {
   flex-basis: auto;
 }
+/* header media */
 
-@media screen and (max-width: 341px) {
+@media screen and (max-width: 520px) {
+  .hamada-logo .span2-logo {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 370px) {
   .hamada-logo span {
     display: none;
   }
-  .hamada-logo img {
-    width: 100% !important;
-  }
+
 }
 
-/* footer */
+@media screen and (max-width: 400px) {
+  #my-header-offcanvas {
+    width: 75% !important;
+  }
+}
+/* footer---------------------------------------------------------------------------------*/
 .footer-logo {
   color: var(--my-dark-blue);
 }
