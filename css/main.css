@@ -31,6 +31,7 @@ header .nav-link:active {
 }
 .my-btn-primary:focus {
   border: none;
+  background-color: var(--my-primary-hover);
 }
 .my-btn-primary:active {
   color: #fff;
@@ -40,6 +41,16 @@ header .nav-link:active {
   font-size: 0.7rem;
   padding: 0.1rem 0.45rem;
 }
+
+.pages-navbar .nav-link {
+  color: var(--my-dark-blue);
+}
+
+.right-side .dropdown li {
+  color: var(--my-dark-blue);
+  margin-bottom: 0.3rem;
+}
+
 /* fix transition */
 .right-side {
   flex-basis: auto;
@@ -63,7 +74,7 @@ header .nav-link:active {
   outline: solid 0.5px var(--gray-icon);
   padding: 0.1rem 0.2rem;
   background-color: transparent;
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .social-media-a:hover,

@@ -6,6 +6,7 @@
   --my-med-blue: #454f6c;
   --my-primary-hover: #cf0e0e;
   --gray-icon:#9499a6;
+  --light-pink-bg:#faebeb;
 }
 h1,
 h2,
@@ -21,8 +22,11 @@ body {
 .bg-my-primary {
   background-color: var(--my-primary);
 }
+
 .color-my-primary {
   color: var(--my-primary);
 }
-
+.bg-light-pink{
+  background-color: var(--light-pink-bg);
+}
 

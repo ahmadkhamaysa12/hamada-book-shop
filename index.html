@@ -47,23 +47,18 @@
   </head>
   <body>
     <!-- header -->
-    <header>
-      <nav
-        class="navbar navbar-expand-md flex-md-wrap flex-nowrap py-4  justify-content-between"
-      >
-        <div
-          class="container-lg container-fluid align-items-md-center align-items-stretch flex-md-row flex-column "
-        >
+    <header >
+      <nav class="navbar navbar-expand-md justify-content-evenly">
+        <div class="container-lg container-fluid row d-flex">
+          <!-- left side -->
           <div
-            class="lest-side gap-5 d-flex gap-md-4 gap-sm-4 align-items-center justify-content-between"
+            class="col-md-7 col-6 col-sm-9 lest-side gap-5 d-flex gap-md-4 gap-sm-4 align-items-center justify-content-between"
           >
             <a
               href="#"
               class="hamada-logo text-decoration-none color-my-primary"
             >
-              <div
-                class="d-flex  gap-1 align-items-center"
-              >
+              <div class="d-flex gap-1 align-items-center">
                 <img class="" src="./images/logo.svg" alt="" />
                 <span class="fw-bold">HAMADA </span>
                 <span class=" "> BookShop</span>
@@ -74,44 +69,129 @@
             >
               <input
                 type="text"
-                class="border-0 rounded-5 ps-3 form-control shadow-none"
+                class="border-0 rounded-5 ps-3 pe-5 form-control shadow-none overflow-x-auto z-0"
                 placeholder="Search book by author or publisher"
               />
-              <button type="submit" class="btn border-0 rounded-5">
+              <button
+                type="submit"
+                class="btn border-0 rounded-5 position-absolute top-0 end-0 z-0"
+              >
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </form>
-            <button
-              type="button"
-              class="btn my-btn-primary btn-coll justify-content-end rounded-5 navbar-toggler py-2 px-3"
-              data-bs-toggle="collapse"
-              data-bs-target="#right-side"
-            >
-              drop
-            </button>
           </div>
 
-          <div
-            class="right-side justify-content-end collapse navbar-collapse"
-            id="right-side"
-          >
-            <ul
-              class="d-flex flex-md-row flex-column navbar-nav align-items-center justify-content-center"
-            >
-              <li><a class="nav-link" href="#">FAQ</a></li>
-              <li><a class="nav-link" href="#">Track Order</a></li>
-              <a href="#" class="mb-2 mb-md-0 position-relative">
-                <span
-                  class="text-white rounded-5 cart-count bg-my-primary position-absolute end-0"
-                  >0</span
-                >
-                <img src="./images/icons/cart.svg" alt=""
-              /></a>
+          <!-- right side -->
+
+          <div class="right-side d-flex col-md-5 col-sm-3 col-6 justify-content-end">
+            <!-- drop-down -->
+
+            <div class="dropdown d-md-none " >
               <button
-                class="btn my-btn-primary signin-btn ms-1 rounded-5 text-white"
+                type="button"
+                class="btn my-btn-primary btn-coll justify-content-end rounded-5 dropdown-toggle py-2 px-3"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                Sign In
+                <i class="fa-solid fa-bars"></i>
               </button>
+              <ul class="fw-bold dropdown-menu text-center dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                <li><a class="dropdown-item" href="#">Track Order</a></li>
+                <li>
+                  <a
+                    href="#"
+                    class="dropdown-item px-2 position-relative d-inline"
+                  >
+                    <span
+                      class="text-white rounded-5 cart-count bg-my-primary position-absolute end-0"
+                      >0</span
+                    >
+                    <img src="./images/icons/cart.svg" alt=""
+                  /></a>
+                </li>
+                <li class="mx-4 mt-2">
+                  <button
+                    class="btn dropdown-item my-btn-primary signin-btn rounded-5 text-white"
+                  >
+                    Sign In
+                  </button>
+                </li>
+
+                <!-- pages -->
+
+                <li class="d-block d-sm-none dropdown-item-text">
+                  <span class=" fw-bold fs-4">Pages</span>
+                </li>
+                <li class="d-block d-sm-none">
+                  <a class="dropdown-item" href="#">Home</a>
+                </li>
+                <li class="d-block d-sm-none">
+                  <a class="dropdown-item" href="#">Categories</a>
+                </li>
+                <li class="d-block d-sm-none">
+                  <a class="dropdown-item" href="#">About</a>
+                </li>
+                <li class="d-block d-sm-none">
+                  <a class="dropdown-item" href="#">Blog</a>
+                </li>
+                <li class="d-block d-sm-none">
+                  <a class="dropdown-item" href="#">Contect</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- normal right side-->
+
+            <div class="collapse navbar-collapse justify-content-end">
+              <ul
+                class="d-flex navbar-nav align-items-center justify-content-center"
+              >
+                <li><a class="nav-link" href="#">FAQ</a></li>
+                <li><a class="nav-link" href="#">Track Order</a></li>
+                <a href="#" class="px-md-1 position-relative ">
+                  <span
+                    class="text-white rounded-5 cart-count bg-my-primary position-absolute end-0"
+                    >0</span
+                  >
+                  <img src="./images/icons/cart.svg" alt=""
+                /></a>
+                <button
+                  class="btn my-btn-primary signin-btn ms-1 rounded-5 text-white"
+                >
+                  Sign In
+                </button>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- pages-nav -->
+
+      <nav
+        class="navbar p-0 navbar-expand-sm bg-light-pink align-items-center justify-content-center"
+      >
+        <div class="container-lg container-fluid">
+          <div
+            class="collapse navbar-collapse justify-content-center align-items-center"
+          >
+            <ul id="pages-drop" class="fw-bold navbar-nav">
+              <li>
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Contect</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -121,9 +201,7 @@
     <!-- footer -->
     <footer>
       <div class="container-lg container-fluid">
-        <div
-          class="row gap-2 text-sm-start text-center align-items-sm-start"
-        >
+        <div class="row gap-2 text-sm-start text-center align-items-sm-start">
           <div
             class="col-lg-3 col-sm-12 d-flex flex-column align-items-lg-start align-items-center"
           >
