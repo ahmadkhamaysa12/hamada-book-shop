@@ -1,6 +1,11 @@
+img{
+  -webkit-user-drag: none;
+}
+
+
 /* header */
-.faragh {
-  height: 5000px;
+header {
+  background-color: #fff;
 }
 .hamada-logo-svg {
   stroke: var(--my-primary);
@@ -75,7 +80,6 @@ header .nav-link:active {
   text-decoration: none;
   padding: 0.4rem 0.6rem;
   color: var(--my-dark-blue);
-
 }
 .right-side .header-off-c li a {
   border-radius: var(--bs-border-radius-xxl);
@@ -96,23 +100,48 @@ header .nav-link:active {
 /* header media */
 
 @media screen and (max-width: 520px) {
-  .hamada-logo .span2-logo {
+  .hamada-logo .spans2-logo {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 370px) {
   .hamada-logo span {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 400px) {
   #my-header-offcanvas {
     width: 75% !important;
   }
+}
+
+/* main-------------------------------------------------------------------------- */
+
+/* carousel-item  */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.my-c-indicators {
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.my-c-indicators button{
+  padding: 0.3rem;
+  margin: 0rem 0.2rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--light-pink-bg);
+}
+.my-c-indicators button:hover{
+  background-color: var(--my-primary-hover);
+  outline-style: solid;
+  outline: var(--my-primary-hover) solid 1px ;
+  outline-offset: 3px;
 }
 /* footer---------------------------------------------------------------------------------*/
 .footer-logo {

@@ -52,7 +52,7 @@
         <div class="container-lg container-fluid row d-flex">
           <!-- left side -->
           <div
-            class="col-md-7 py-3 col-10 col-sm-9 lest-side gap-1 d-flex  gap-sm-4 gap-0 align-items-center justify-content-start"
+            class="col-md-7 py-3 col-10 col-sm-9 lest-side gap-1 d-flex gap-sm-4 gap-0 align-items-center justify-content-start"
           >
             <a
               href="#"
@@ -82,13 +82,12 @@
                   </g>
                 </svg>
                 <span class="fw-bold span1-logo">HAMADA </span>
-                <span class=" span2-logo"> BookShop</span>
+                <span class="span2-logo"> BookShop</span>
               </div>
-            
             </a>
-            
+
             <form
-              class="input-group d-flex  gap-2 h-search rounded-5 justify-content-between"
+              class="input-group d-flex gap-2 h-search rounded-5 justify-content-between"
             >
               <input
                 type="text"
@@ -242,7 +241,7 @@
       <!-- pages-nav -->
 
       <nav
-        class="navbar p-0 navbar-expand-sm bg-light-pink align-items-center justify-content-center"
+        class="navbar py-2 navbar-expand-sm bg-light-pink align-items-center justify-content-center"
       >
         <div class="container-lg container-fluid">
           <div
@@ -270,7 +269,84 @@
       </nav>
     </header>
     <main>
-      <div class="faragh"></div>
+      <section class="hero-section bg-light-pink">
+        <div class="container-lg container-fluid">
+          <div id="header-carousel"  class="carousel slide position-relative">
+            <div class="my-c-indicators position-absolute z-3">
+              <button
+                type="button"
+                data-bs-target="#header-carousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+
+              <button
+                type="button"
+                data-bs-target="#header-carousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#header-carousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner" >
+              <div class="carousel-item active">
+                <img
+                  src="./images/hero-imgs/hero1.webp"
+                  class="d-block w-100"
+                  alt="Hero image 1"draggable="false"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/hero-imgs/hero2.webp"
+                  class="d-block w-100"
+                  alt="Hero image 2"draggable="false"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/hero-imgs/hero3.webp"
+                  class="d-block w-100"
+                  alt="Hero image 3"
+                draggable="false"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#header-carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#header-carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
     </main>
     <!-- footer -->
     <footer>
