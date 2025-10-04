@@ -232,6 +232,21 @@ header .nav-link:active {
 #multiCardCarousel .carousel-control-next {
   width: 4%;
 }
+/* above newsd letter */
+.sub-above-newsletter-1{
+  background-image: url(../images/above-newsletter/history1.webp);
+}
+.sub-above-newsletter-2{ 
+  background-image: url(../images/above-newsletter/shekh-webp);
+}
+.sub-above-newsletter-1,
+.sub-above-newsletter-2 {
+  background-size: cover;      
+  
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 200px;              
+}
 
 /* newsletter */
 
