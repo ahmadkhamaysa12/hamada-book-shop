@@ -1,7 +1,6 @@
-img{
+img {
   -webkit-user-drag: none;
 }
-
 
 /* header */
 header {
@@ -130,19 +129,120 @@ header .nav-link:active {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.my-c-indicators button{
-  padding: 0.3rem;
-  margin: 0rem 0.2rem;
+.my-c-indicators button {
+  padding: 0.4rem;
+  margin: 0rem 0.4rem;
   border-radius: 50%;
   border: none;
   background-color: var(--light-pink-bg);
 }
-.my-c-indicators button:hover{
+.my-c-indicators button:hover {
   background-color: var(--my-primary-hover);
   outline-style: solid;
-  outline: var(--my-primary-hover) solid 1px ;
+  outline: var(--my-primary-hover) solid 1px;
   outline-offset: 3px;
 }
+
+/* card */
+
+.card a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover a {
+  color: var(--my-primary);
+}
+.my-card-author {
+  color: var(--gray-icon);
+}
+
+.my-card-rating i,
+.reviews-number {
+  color: orangered;
+}
+
+.my-card-price {
+  color: var(--my-primary);
+  font-weight: bold;
+  font-size: xx-large;
+}
+#best-selling-carousel .carousel-inner {
+  width: 85%;
+  padding: 1em 0!;
+  margin-inline: auto;
+}
+#best-selling-carousel .carousel-item {
+  display: block;
+  margin-right: 0 0.5rem;
+  flex: 0 0 calc(100% / 3);
+}
+
+#multiCardCarousel .carousel-inner {
+  overflow: hidden;
+}
+
+/* layout cards inside a slide */
+.slide-cards {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  justify-content: flex-start;
+}
+
+/* card styles: make them responsive */
+.slide-cards .card {
+  flex: 0 0 calc(25% - 0.75rem); /* 4 per row by default */
+  max-width: calc(25% - 0.75rem);
+}
+
+/* breakpoints: 3 per row on lg, 2 on md, 1 on sm */
+@media (max-width: 1199.98px) {
+  /* <1200px */
+  .slide-cards .card {
+    flex: 0 0 calc(33.333% - 0.66rem);
+    max-width: calc(33.333% - 0.66rem);
+  }
+}
+@media (max-width: 991.98px) {
+  /* <992px */
+  .slide-cards .card {
+    flex: 0 0 calc(50% - 0.5rem);
+    max-width: calc(50% - 0.5rem);
+  }
+}
+@media (max-width: 575.98px) {
+  /* <576px */
+  .slide-cards .card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* optional: card image fit */
+.card-img-top {
+  object-fit: cover;
+  height: 180px;
+}
+
+/* smaller control spacing */
+#multiCardCarousel .carousel-control-prev,
+#multiCardCarousel .carousel-control-next {
+  width: 4%;
+}
+
+/* newsletter */
+
+.newsletter p{
+  color: var(--gray-icon);
+  font-size: 0.7rem;
+}
+.newsletter .container{
+  background-image: url(../images/newsletter/newsletter.webp);
+}
+
 /* footer---------------------------------------------------------------------------------*/
 .footer-logo {
   color: var(--my-dark-blue);
@@ -180,4 +280,15 @@ footer .nav-link:hover {
   .footer-logo span {
     display: none;
   }
+}
+
+/* about */
+
+.hero-section img {
+  height: 400px;
+  object-fit: cover;
+}
+.our-story p,
+.our-goal p {
+  color: var(--gray-icon);
 }
