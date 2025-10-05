@@ -19,6 +19,13 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- arabicfont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- icons -->
     <link
       rel="stylesheet"
@@ -269,6 +276,7 @@
       </nav>
     </header>
     <main>
+      <!-- hero-section -->
       <section class="hero-section bg-light-pink">
         <div class="container">
           <div id="header-carousel" class="carousel slide position-relative">
@@ -295,7 +303,7 @@
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner rounded-5">
               <div class="carousel-item active">
                 <img
                   src="./images/hero-imgs/hero1.webp"
@@ -304,7 +312,7 @@
                   draggable="false"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item rounded-5">
                 <img
                   src="./images/hero-imgs/hero2.webp"
                   class="d-block w-100"
@@ -312,7 +320,7 @@
                   draggable="false"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item rounded-5">
                 <img
                   src="./images/hero-imgs/hero3.webp"
                   class="d-block w-100"
@@ -349,10 +357,1111 @@
         </div>
       </section>
 
-      <section class="above-newsletter pt-5">
+      <!-- Latest Published items -->
+
+      <section class="latest-published-items py-5">
+        <div class="container">
+          <div
+            class="titel-categories d-flex justify-content-between pb-4 px-1"
+          >
+            <h3>Latest Published items</h3>
+            <div class="buttons dropdown dropstart">
+              <button
+                class="my-btn-primary dropdown-toggle rounded-5 py-2 px-3"
+                type="button"
+                data-bs-toggle="dropdown"
+                data-bs-target="#c-dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </button>
+
+              <ul
+                class="nav-pills gap-2 mb-3 dropdown-menu"
+                id="c-dropdown"
+                role="tablist"
+              >
+                <li
+                  class="dropdown-item d-flex justify-content-center"
+                  role="presentation"
+                >
+                  <button
+                    class="active my-btn-primary"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Home
+                  </button>
+                </li>
+                <li
+                  class="dropdown-item d-flex justify-content-center"
+                  role="presentation"
+                >
+                  <button
+                    class="my-btn-primary"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    Profile
+                  </button>
+                </li>
+                <li
+                  class="dropdown-item d-flex justify-content-center"
+                  role="presentation"
+                >
+                  <button
+                    class="my-btn-primary"
+                    id="pills-contact1-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
+                    Contact 1
+                  </button>
+                </li>
+                <li
+                  class="dropdown-item d-flex justify-content-center"
+                  role="presentation"
+                >
+                  <button
+                    class="my-btn-primary"
+                    id="pills-contact2-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact1"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact1"
+                    aria-selected="false"
+                  >
+                    Contact 2
+                  </button>
+                </li>
+                <li
+                  class="dropdown-item d-flex justify-content-center"
+                  role="presentation"
+                >
+                  <button
+                    class="my-btn-primary"
+                    id="pills-contact3-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact2"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact2"
+                    aria-selected="false"
+                  >
+                    Contact 3
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/بداىع الفوائد.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>بدائع الفوائد</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/تحفة المولود.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>تحفة المولود</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/اغاثة اللهفان.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>اغاثة اللهفان</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/طريق الهجرتين.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>طريق الهجرتين</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/احكام اهل الذمة.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>احكام اهل الذمة</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/اعلام الموقعين.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>اعلام الموقعين</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/الصواعق المرسلة.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>الصواعق المرسلة</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/الداء والدواء.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>الداء والدواء</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/زاد المعاد.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"><h4>زاد المعاد</h4></a>
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/الرسالة التبوكية.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>الرسالة التبوكية</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/الفهارس العلمية.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>الفهارس العلمية</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/الكافية الشافية.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>الكافية الشافية</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/عدة الصابرين.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>عدة الصابرين</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/كتاب الروح.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"><h4>كتاب الروح</h4></a>
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact1"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/هداية الحيارى.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>هداية الحيارى</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/حادي الارواح.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>حادي الارواح</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact2"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/جلاء الافهام.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>جلاء الافهام</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/روضة المحبين.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>روضة المحبين</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/مدلرج السالكين.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>مدارج السالكين</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact3"
+              role="tabpanel"
+              aria-labelledby="pills-disabled-tab"
+              tabindex="0"
+            >
+              <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/imgi_10_01-بدائع-الفوائد.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>ابن القيم's book</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/imgi_10_01-بدائع-الفوائد.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>ابن القيم's book</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/imgi_10_01-بدائع-الفوائد.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>ابن القيم's book</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/imgi_10_01-بدائع-الفوائد.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>ابن القيم's book</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/imgi_10_01-بدائع-الفوائد.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>ابن القيم's book</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="card rounded-5 text-center">
+                    <img
+                      src="./images/books/imgi_10_01-بدائع-الفوائد.webp"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+
+                    <div class="card-body">
+                      <a href="#" class="my-card-title"
+                        ><h4>ابن القيم's book</h4></a
+                      >
+                      <p class="my-card-author mb-0">ابن القيم</p>
+                      <div class="my-card-footer row justify-content-evenly">
+                        <div
+                          class="my-card-review col-9 d-flex flex-column align-items-start"
+                        >
+                          <div class="my-card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <span class="my-card-reviews-number"
+                            >(<span class="reviews-number">120</span>
+                            Review)</span
+                          >
+                        </div>
+                        <span
+                          class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                          >50$</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- above-newsletter -->
+      <section class="above-newsletter">
         <div class="container">
           <div class="row justify-content-between text-white row-gap-3">
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12 px-2">
               <div
                 class="sub-above-newsletter-1 rounded-5 d-flex flex-column px-3 align-items-start justify-content-evenly"
               >
@@ -362,11 +1471,13 @@
                 </button>
               </div>
             </div>
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12 px-2">
               <div
                 class="sub-above-newsletter-2 rounded-5 d-flex flex-column px-3 align-items-start justify-content-evenly"
               >
-                <h4 class="fw-bold text-capitalize">the lifestory of ibn taymiyya</h4>
+                <h4 class="fw-bold text-capitalize">
+                  the lifestory of ibn taymiyya
+                </h4>
                 <button class="my-btn-primary rounded-5 py-2 px-3">
                   Veiw Datails
                 </button>
@@ -376,9 +1487,10 @@
         </div>
       </section>
 
-      <section class="newsletter py-5">
+      <!-- newsletter -->
+      <section class="newsletter py-5 px-2">
         <div class="p-5 container rounded-5">
-          <div class="row text-white text-center p-5 row-gap-4">
+          <div class="row text-white text-center p-2 p-sm-5 row-gap-4">
             <h3 class="fw-bold">Join Newsletter</h3>
             <p class="d-none d-sm-block">
               Lorem started its journey with cast iron (CI) products in 1980.

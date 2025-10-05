@@ -34,7 +34,9 @@ header .nav-link:active {
   background-color: var(--my-primary);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  padding: 0.3rem 0.9rem;
   border: none;
+  border-radius: var(--bs-border-radius-xxl);
 }
 .my-btn-primary:hover {
   background-color: var(--my-primary-hover);
@@ -151,7 +153,10 @@ header .nav-link:active {
   color: black;
   transition: all 0.3s ease-in-out;
 }
-
+.card h4,
+p {
+  font-family: var(--arabic-font);
+}
 .card:hover a {
   color: var(--my-primary);
 }
@@ -167,8 +172,14 @@ header .nav-link:active {
 .my-card-price {
   color: var(--my-primary);
   font-weight: bold;
-  font-size: xx-large;
+  font-size: x-large;
 }
+@media screen and (max-width: 370px) {
+  .card .my-card-review {
+    display: none !important;
+  }
+}
+
 #best-selling-carousel .carousel-inner {
   width: 85%;
   padding: 1em 0!;
@@ -184,77 +195,47 @@ header .nav-link:active {
   overflow: hidden;
 }
 
-/* layout cards inside a slide */
-.slide-cards {
-  display: flex;
-  gap: 1rem;
-  padding: 1rem 0;
-  justify-content: flex-start;
+/* Latest Published items */
+.my-btn-primary-outlined {
+  border: none;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  outline: 2px solid var(--my-primary);
+  color: var(--my-primary);
+  background-color: #fff;
+  border-radius: var(--bs-border-radius-xxl) !important;
 }
 
-/* card styles: make them responsive */
-.slide-cards .card {
-  flex: 0 0 calc(25% - 0.75rem); /* 4 per row by default */
-  max-width: calc(25% - 0.75rem);
+.my-btn-primary-outlined:focus,
+.my-btn-primary-outlined:active {
+  outline: 2px solid var(--my-primary);
+  background-color: var(--my-primary) !important;
+  color: white;
+  border-radius: var(--bs-border-radius-xxl) !important;
 }
 
-/* breakpoints: 3 per row on lg, 2 on md, 1 on sm */
-@media (max-width: 1199.98px) {
-  /* <1200px */
-  .slide-cards .card {
-    flex: 0 0 calc(33.333% - 0.66rem);
-    max-width: calc(33.333% - 0.66rem);
-  }
-}
-@media (max-width: 991.98px) {
-  /* <992px */
-  .slide-cards .card {
-    flex: 0 0 calc(50% - 0.5rem);
-    max-width: calc(50% - 0.5rem);
-  }
-}
-@media (max-width: 575.98px) {
-  /* <576px */
-  .slide-cards .card {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
-/* optional: card image fit */
-.card-img-top {
-  object-fit: cover;
-  height: 180px;
-}
-
-/* smaller control spacing */
-#multiCardCarousel .carousel-control-prev,
-#multiCardCarousel .carousel-control-next {
-  width: 4%;
-}
 /* above newsd letter */
-.sub-above-newsletter-1{
+.sub-above-newsletter-1 {
   background-image: url(../images/above-newsletter/history1.webp);
 }
-.sub-above-newsletter-2{ 
+.sub-above-newsletter-2 {
   background-image: url(../images/above-newsletter/shekh-webp);
 }
 .sub-above-newsletter-1,
 .sub-above-newsletter-2 {
-  background-size: cover;      
-  
-  background-position: center; 
+  background-size: cover;
+
+  background-position: center;
   background-repeat: no-repeat;
-  height: 200px;              
+  height: 200px;
 }
 
 /* newsletter */
 
-.newsletter p{
+.newsletter p {
   color: var(--gray-icon);
   font-size: 0.7rem;
 }
-.newsletter .container{
+.newsletter .container {
   background-image: url(../images/newsletter/newsletter.webp);
 }
 
