@@ -32,3 +32,6 @@ body {
   background-color: var(--light-pink-bg);
 }
 
+.w-40 {
+    width: 40%!important;
+}
