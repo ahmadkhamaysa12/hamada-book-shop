@@ -268,279 +268,105 @@
         </div>
       </nav>
     </header>
+
     <main>
-      <section class="book-hero">
-        <div
-          class="container rounded-5 bg-my-primary py-sm-5 py-3 justify-content-end px-sm-5 px-3"
-        >
-          <div
-            class="flex-sm-row align-items-center d-flex flex-column justify-content-center"
+      <section class="hero-section">
+        <div class="container position-relative bg">
+          <img
+            class="w-100 img-fluid"
+            src="../images/hero-imgs/contact-hero.webp"
+            alt=""
+          />
+          <h2
+            class="position-absolute top-50 start-50 translate-middle text-white display-4 fw-bold"
           >
-            <div class="book-img col-sm-4 col-12 p-0">
-              <img
-                class="img-fluid rounded-5"
-                src="../images/books/اعلام الموقعين.webp"
-                alt=""
-              />
-            </div>
-            <div
-              class="book-info text-white text-center text-sm-start col-sm-8 col-12 d-flex flex-column px-3"
-            >
-              <div class="hero-book-title mb-3">
-                <h3>اعلام الموقعين</h3>
-                <span>ابن القيم</span>
+            Contact
+          </h2>
+        </div>
+      </section>
+      <section class="map-section py-5">
+        <div class="container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d265.0753283126028!2d35.34498095380868!3d32.40836336942559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1761379817447!5m2!1sen!2s"
+            class="w-100 h-100"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <section class="get-in-touch py-5">
+        <div class="container text-center">
+          <h2 class="text-start">Get in Touch</h2>
+          <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+          <div class="row row-gap-5">
+            <div class="row col-12 col-lg-8 row-gap-4 m-0">
+              <textarea class="col-12" placeholder="Enter Message"></textarea>
+
+              <div class="col-12 col-sm-6 p-0 pe-sm-3">
+                <input
+                  class="w-100 p-3"
+                  type="text"
+                  placeholder="Enter your name"
+                />
               </div>
-
-              <div
-                class="my-book-review d-flex flex-column align-items-sm-start align-items-center"
-              >
-                <span
-                  class="fs-1 fw-bold my-book-price align-items-center d-flex justify-content-center"
-                  >$50.00</span
+              <div class="col-12 col-sm-6 p-0 ps-sm-3">
+                <input class="w-100 p-3" type="text" placeholder="Email" />
+              </div>
+              <input
+                class="col-12 p-3"
+                type="text"
+                placeholder="Enter Subject"
+              />
+              <div class="d-flex justify-content-start p-0">
+                <button
+                  class="my-btn-primary-outlined w-25 col-2 py-3 rounded-0"
                 >
-                <div class="d-flex gap-2 py-2">
-                  <div class="my-book-rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-
-                  <span class="my-book-reviews-number"
-                    >(<span class="book-reviews-number">120</span> Review)</span
+                  Send
+                </button>
+              </div>
+            </div>
+            <div class="row col-12 col-lg-4">
+              <div class="col-12 d-flex contacts-info">
+                <div class="contact-icon">
+                  <i class="fs-1 gray-color fa-regular fa-house"></i>
+                </div>
+                <div class="contact-info d-flex flex-column align-items-start">
+                  <h5>Buttonwood, California.</h5>
+                  <span class="gray-color fs-5 fw-light"
+                    >Rosemead, CA 91770</span
                   >
                 </div>
-
-                <div class="d-flex gap-2">
-                  <button class="my-book-btn btn rounded-5 fw-normal">Add to card</button>
-                  <button class=" share-btn  btn rounded-5 py-2">
-                    <i class="fa-solid fa-share-nodes"></i>
-                  </button>
+              </div>
+              <div class="col-12 d-flex contacts-info">
+                <div class="contact-icon">
+                  <i class="fs-1 gray-color fa-solid fa-mobile-screen"></i>
+                </div>
+                <div class="contact-info d-flex flex-column align-items-start">
+                  <h5>Buttonwood, California.</h5>
+                  <span class="gray-color fs-5 fw-light"
+                    >Rosemead, CA 91770</span
+                  >
+                </div>
+              </div>
+              <div class="col-12 d-flex contacts-info">
+                <div class="contact-icon text-center">
+                  <i class="fs-1 gray-color fa-regular fa-envelope"></i>
+                </div>
+                <div class="contact-info d-flex flex-column align-items-start">
+                  <h5>Buttonwood, California.</h5>
+                  <span class="gray-color fs-5 fw-light"
+                    >Rosemead, CA 91770</span
+                  >
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="book-info-sec py-5">
-        <div class="container">
-          <ul class="nav nav-pills gap-3">
-            <li class="nav-item">
-              <button
-                class="my-btn-primary-outlined active"
-                data-bs-toggle="pill"
-                data-bs-target="#discription-pane"
-                type="button"
-                role="tab"
-                aria-controls="discription-pane"
-                aria-selected="false"
-              >
-                Description
-              </button>
-            </li>
-            <li class="nav-item">
-              <button
-                class="my-btn-primary-outlined"
-                data-bs-toggle="pill"
-                data-bs-target="#author-pane"
-                type="button"
-                role="tab"
-                aria-controls="author-pane"
-                aria-selected="false"
-              >
-                Author
-              </button>
-            </li>
-            <li class="nav-item">
-              <button
-                class="my-btn-primary-outlined"
-                data-bs-toggle="pill"
-                data-bs-target="#comments-pane"
-                type="button"
-                role="tab"
-                aria-controls="comments-pane"
-                aria-selected="false"
-              >
-                Comments
-              </button>
-            </li>
-            <li class="nav-item">
-              <button
-                class="my-btn-primary-outlined"
-                data-bs-toggle="pill"
-                data-bs-target="#review-pane"
-                type="button"
-                role="tab"
-                aria-controls="review-pane"
-                aria-selected="false"
-              >
-                Review
-              </button>
-            </li>
-          </ul>
-          <div class="tab-content py-4" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="discription-pane"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-              tabindex="0"
-            >
-              Beryl Cook is one of Britain’s most talented and amusing artists
-              .Beryl’s pictures feature women of all shapes and sizes enjoying
-              themselves .Born between the two world wars, Beryl Cook eventually
-              left Kendrick School in Reading at the age of 15, where she went
-              to secretarial school and then into an insurance office. After
-              moving to London and then Hampton, she eventually married her next
-              door neighbour from Reading, John Cook. He was an officer in the
-              Merchant Navy and after he left the sea in 1956, they bought a pub
-              for a year before John took a job in Southern Rhodesia with a
-              motor company. Beryl bought their young son a box of watercolours,
-              and when showing him how to use it, she decided that she herself
-              quite enjoyed painting. John subsequently bought her a child’s
-              painting set for her birthday and it was with this that she
-              produced her first significant work, a half-length portrait of a
-              dark-skinned lady with a vacant expression and large drooping
-              breasts. It was aptly named ‘Hangover’ by Beryl’s husband and It
-              is often frustrating to attempt to plan meals that are designed
-              for one. Despite this fact, we are seeing more and more recipe
-              books and Internet websites that are dedicated to the act of
-              cooking for one. Divorce and the death of spouses or grown
-              children leaving for college are all reasons that someone
-              accustomed to cooking for more than one would suddenly need to
-              learn how to adjust all the cooking practices utilized before into
-              a streamlined plan of cooking that is more efficient for one
-              person creating less.
-            </div>
-            <div
-              class="tab-pane fade"
-              id="author-pane"
-              role="tabpanel"
-              aria-labelledby="profile-tab"
-              tabindex="0"
-            >
-              Beryl Cook is one of Britain’s most talented and amusing artists
-              .Beryl’s pictures feature women of all shapes and sizes enjoying
-              themselves .Born between the two world wars, Beryl Cook eventually
-              left Kendrick School in Reading at the age of 15, where she went
-              to secretarial school and then into an insurance office. After
-              moving to London and then Hampton, she eventually married her next
-              door neighbour from Reading, John Cook. He was an officer in the
-              Merchant Navy and after he left the sea in 1956, they bought a pub
-              for a year before John took a job in Southern Rhodesia with a
-              motor company. Beryl bought their young son a box of watercolours,
-              and when showing him how to use it, she decided that she herself
-              quite enjoyed painting. John subsequently bought her a child’s
-              painting set for her birthday and it was with this that she
-              produced her first significant work, a half-length portrait of a
-              dark-skinned lady with a vacant expression and large drooping
-              breasts. It was aptly named ‘Hangover’ by Beryl’s husband and It
-              is often frustrating to attempt to plan meals that are designed
-              for one. Despite this fact, we are seeing more and more recipe
-              books and Internet websites that are dedicated to the act of
-              cooking for one. Divorce and the death of spouses or grown
-              children leaving for college are all reasons that someone
-              accustomed to cooking for more than one would suddenly need to
-              learn how to adjust all the cooking practices utilized before into
-              a streamlined plan of cooking that is more efficient for one
-              person creating less.
-            </div>
-            <div
-              class="tab-pane fade"
-              id="comments-pane"
-              role="tabpanel"
-              aria-labelledby="contact-tab"
-              tabindex="0"
-            >
-              Beryl Cook is one of Britain’s most talented and amusing artists
-              .Beryl’s pictures feature women of all shapes and sizes enjoying
-              themselves .Born between the two world wars, Beryl Cook eventually
-              left Kendrick School in Reading at the age of 15, where she went
-              to secretarial school and then into an insurance office. After
-              moving to London and then Hampton, she eventually married her next
-              door neighbour from Reading, John Cook. He was an officer in the
-              Merchant Navy and after he left the sea in 1956, they bought a pub
-              for a year before John took a job in Southern Rhodesia with a
-              motor company. Beryl bought their young son a box of watercolours,
-              and when showing him how to use it, she decided that she herself
-              quite enjoyed painting. John subsequently bought her a child’s
-              painting set for her birthday and it was with this that she
-              produced her first significant work, a half-length portrait of a
-              dark-skinned lady with a vacant expression and large drooping
-              breasts. It was aptly named ‘Hangover’ by Beryl’s husband and It
-              is often frustrating to attempt to plan meals that are designed
-              for one. Despite this fact, we are seeing more and more recipe
-              books and Internet websites that are dedicated to the act of
-              cooking for one. Divorce and the death of spouses or grown
-              children leaving for college are all reasons that someone
-              accustomed to cooking for more than one would suddenly need to
-              learn how to adjust all the cooking practices utilized before into
-              a streamlined plan of cooking that is more efficient for one
-              person creating less.
-            </div>
-            <div
-              class="tab-pane fade"
-              id="review-pane"
-              role="tabpanel"
-              aria-labelledby="disabled-tab"
-              tabindex="0"
-            >
-              Beryl Cook is one of Britain’s most talented and amusing artists
-              .Beryl’s pictures feature women of all shapes and sizes enjoying
-              themselves .Born between the two world wars, Beryl Cook eventually
-              left Kendrick School in Reading at the age of 15, where she went
-              to secretarial school and then into an insurance office. After
-              moving to London and then Hampton, she eventually married her next
-              door neighbour from Reading, John Cook. He was an officer in the
-              Merchant Navy and after he left the sea in 1956, they bought a pub
-              for a year before John took a job in Southern Rhodesia with a
-              motor company. Beryl bought their young son a box of watercolours,
-              and when showing him how to use it, she decided that she herself
-              quite enjoyed painting. John subsequently bought her a child’s
-              painting set for her birthday and it was with this that she
-              produced her first significant work, a half-length portrait of a
-              dark-skinned lady with a vacant expression and large drooping
-              breasts. It was aptly named ‘Hangover’ by Beryl’s husband and It
-              is often frustrating to attempt to plan meals that are designed
-              for one. Despite this fact, we are seeing more and more recipe
-              books and Internet websites that are dedicated to the act of
-              cooking for one. Divorce and the death of spouses or grown
-              children leaving for college are all reasons that someone
-              accustomed to cooking for more than one would suddenly need to
-              learn how to adjust all the cooking practices utilized before into
-              a streamlined plan of cooking that is more efficient for one
-              person creating less.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- newsletter -->
-      <section class="newsletter py-5 px-2">
-        <div class="p-5 container rounded-5">
-          <div class="row text-white text-center p-2 p-sm-5 row-gap-4">
-            <h3 class="fw-bold">Join Newsletter</h3>
-            <p class="d-none d-sm-block">
-              Lorem started its journey with cast iron (CI) products in 1980.
-              The initial main objective was to ensure pure water and affordable
-              irrigation.
-            </p>
-            <form class="d-flex flex-sm-row flex-column row-gap-2">
-              <input
-                class="form-control me-2 rounded-5 shadow-none"
-                type="email"
-                placeholder="Enter your email"
-              />
-              <button class="btn my-btn-primary rounded-5" type="submit">
-                Subscribe
-              </button>
-            </form>
           </div>
         </div>
       </section>
     </main>
+
     <!-- footer -->
     <footer>
       <div class="container">

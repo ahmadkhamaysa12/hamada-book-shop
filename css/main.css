@@ -202,7 +202,7 @@ p {
   outline: 2px solid var(--my-primary);
   color: var(--my-primary);
   background-color: #fff;
-  border-radius: var(--bs-border-radius-xxl) !important;
+  border-radius: var(--bs-border-radius-xxl) ;
 }
 
 .my-btn-primary-outlined:focus,
@@ -210,7 +210,7 @@ p {
   outline: 2px solid var(--my-primary);
   background-color: var(--my-primary) !important;
   color: white;
-  border-radius: var(--bs-border-radius-xxl) !important;
+  border-radius: var(--bs-border-radius-xxl);
 }
 
 /* above newsd letter */
@@ -293,4 +293,29 @@ footer .nav-link:hover {
 
 .my-book-btn{
  background-color: white;
+}
+
+.share-btn{
+  outline:  2px solid #fff;
+  color: #fff;
+}
+.share-btn:hover,.share-btn:active,.share-btn:focus{
+  outline:  2px solid #fff;
+  background-color: #fff;
+  color: var(--my-primary);
+}
+
+
+.map-section iframe{
+  height: 450px!important;
+}
+
+.get-in-touch textarea{
+  height: 150px;
+}
+@media screen and (max-width: 300px){
+  .contacts-info{
+    display: block!important;
+    text-align: center!important;
+  }
 }

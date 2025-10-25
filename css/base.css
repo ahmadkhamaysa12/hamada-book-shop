@@ -35,3 +35,6 @@ body {
 .w-40 {
     width: 40%!important;
 }
+.gray-color{
+  color: var(--gray-icon)!important;
+}
