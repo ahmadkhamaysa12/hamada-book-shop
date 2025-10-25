@@ -157,8 +157,10 @@ header .nav-link:active {
 p {
   font-family: var(--arabic-font);
 }
-.card:hover a {
-  color: var(--my-primary);
+.card:hover {
+  .my-card-title {
+    color: var(--my-primary);
+  }
 }
 .my-card-author {
   color: var(--gray-icon);
@@ -202,7 +204,7 @@ p {
   outline: 2px solid var(--my-primary);
   color: var(--my-primary);
   background-color: #fff;
-  border-radius: var(--bs-border-radius-xxl) ;
+  border-radius: var(--bs-border-radius-xxl);
 }
 
 .my-btn-primary-outlined:focus,
@@ -289,33 +291,71 @@ footer .nav-link:hover {
   color: var(--gray-icon);
 }
 
-
-
-.my-book-btn{
- background-color: white;
+.my-book-btn {
+  background-color: white;
 }
 
-.share-btn{
-  outline:  2px solid #fff;
+.share-btn {
+  outline: 2px solid #fff;
   color: #fff;
 }
-.share-btn:hover,.share-btn:active,.share-btn:focus{
-  outline:  2px solid #fff;
+.share-btn:hover,
+.share-btn:active,
+.share-btn:focus {
+  outline: 2px solid #fff;
   background-color: #fff;
   color: var(--my-primary);
 }
 
-
-.map-section iframe{
-  height: 450px!important;
+.map-section iframe {
+  height: 450px !important;
 }
 
-.get-in-touch textarea{
+.get-in-touch textarea {
   height: 150px;
 }
-@media screen and (max-width: 300px){
-  .contacts-info{
-    display: block!important;
-    text-align: center!important;
+@media screen and (max-width: 300px) {
+  .contacts-info {
+    display: block !important;
+    text-align: center !important;
   }
+}
+
+.single-blog .card-link-1,
+.single-blog .card-link-2 {
+  color: var(--gray-icon);
+}
+.card-link-1:hover {
+  color: var(--my-primary);
+}
+.card-link-2:hover {
+  color: var(--my-primary);
+}
+.card-title-a:hover {
+  color: var(--my-primary);
+}
+.single-blog .card-link-2::before {
+  content: "";
+  margin: 0px 10px;
+  width: 2px;
+  height: 12px;
+  display: inline-block;
+  background-color: var(--gray-icon);
+}
+.single-blog{
+  box-shadow: 0px 8px 15px rgba(0, 0, 0,0.1);
+}
+.blog-date {
+  background-color: var(--my-primary);
+  color: white !important;
+  padding: 0.7rem 2rem;
+  left: 40px;
+  top: -70px;
+}
+.blog-date:hover {
+  background-color: transparent;
+  color: var(--my-primary) !important;
+  padding: 0.7rem 2rem;
+  left: 40px;
+  top: -70px;
 }
