@@ -1,6 +1,6 @@
 :root {
   --h-font: "Playfair Display", serif;
-  --roboto-font: Roboto, sans-serif;
+  --roboto-font: "Roboto", sans-serif;
   --my-primary: #fe1716;
   --my-dark-blue: #222f54;
   --my-med-blue: #454f6c;
@@ -16,10 +16,12 @@ h4,
 h5,
 h6 {
   font-family: var(--h-font);
+  font-family: var(--arabic-font);
 }
 
 body {
   font-family: var(--roboto-font);
+  font-family: var(--arabic-font);
 }
 .bg-my-primary {
   background-color: var(--my-primary);

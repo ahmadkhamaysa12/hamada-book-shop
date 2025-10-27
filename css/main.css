@@ -217,6 +217,7 @@ p {
 
 /* above newsd letter */
 .sub-above-newsletter-1 {
+  background-image :rotate 180px;
   background-image: url(../images/above-newsletter/history1.webp);
 }
 .sub-above-newsletter-2 {
