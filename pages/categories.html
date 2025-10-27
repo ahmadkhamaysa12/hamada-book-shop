@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamada BookShop</title>
+    <!--fonts-->
+    <!-- h-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- roboto-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <!-- js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-md justify-content-evenly py-0">
+        <div class="container row d-flex">
+          <!-- left side -->
+          <div
+            class="col-md-7 py-3 col-10 col-sm-9 lest-side gap-1 d-flex gap-sm-4 gap-0 align-items-center justify-content-start"
+          >
+            <a
+              href="#"
+              class="hamada-logo text-decoration-none color-my-primary"
+            >
+              <div class="d-flex py-1 gap-1 align-items-center">
+                <svg
+                  class="hamada-logo-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="#fe1716"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.2"
+                  >
+                    <path
+                      d="M17.506 2.019C12.829 2.835 12 7.5 12 7.5V22s.887-4.873 6-5.441c.55-.061 1-.501 1-1.053V3.393c0-.828-.678-1.517-1.494-1.374M5.333 5c2.46-.003 4.836.887 6.667 2.5V22a10.07 10.07 0 0 0-6.667-2.5c-1.562 0-2.343 0-2.688-.22a1.16 1.16 0 0 1-.424-.425C2 18.51 2 17.895 2 16.663v-8.26c0-1.428 0-2.141.549-2.72c.548-.579 1.11-.609 2.234-.668Q5.056 5 5.333 5"
+                    />
+                    <path
+                      d="M12 22.001a10.07 10.07 0 0 1 6.667-2.5c1.562 0 2.343 0 2.688-.22c.207-.133.291-.218.424-.425c.221-.345.221-.96.221-2.192v-8.26c0-1.428 0-2.141-.549-2.72S20.123 5.06 19 5"
+                    />
+                  </g>
+                </svg>
+                <span class="fw-bold span1-logo">HAMADA </span>
+                <span class="span2-logo"> BookShop</span>
+              </div>
+            </a>
+
+            <form
+              class="input-group d-flex gap-2 h-search rounded-5 justify-content-between"
+            >
+              <input
+                type="text"
+                class="border-0 rounded-5 ps-3 pe-5 form-control shadow-none overflow-x-auto z-0"
+                placeholder="Search book by author or publisher"
+              />
+              <button
+                type="submit"
+                class="btn border-0 rounded-5 position-absolute top-0 end-0 z-0"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- right side -->
+
+          <div
+            class="right-side d-flex col-md-5 col-sm-3 col-2 justify-content-sm-end justify-content-center"
+          >
+            <!-- drop-down -->
+
+            <div class="d-md-none">
+              <button
+                class="my-close-open-btn rounded-5"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#my-header-offcanvas"
+                aria-controls="offcanvasTop"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="m14.112 3.744l7.444 3.761a1.51 1.51 0 0 1 .763 1.775c-.39 1.331-.347 1.89-.092 2.521c.257.638.079 1.449-.587 1.87l-10.284 6.51c-.431.273-.98.315-1.457.082l-3.84-1.895l-1.604-.805l-1.14-.582l-.696-.365l-.36-.196l-.261-.15C.978 15.655.66 14.405.666 13.45c.004-.971.338-2.184 1.265-2.85l.3-.207l.858-.561l2.045-1.306l7.508-4.715a1.5 1.5 0 0 1 1.47-.066Zm5.921 6.944l-8.673 5.49l-.108.063l-.111.052c-.11.408-.148.701-.144.973c.002.162.02.328.055.517l.042.197l9.148-5.79l-.072-.249a4.3 4.3 0 0 1-.138-.996zM2.8 12.678a2.3 2.3 0 0 0-.134.78c-.003.672.237 1.023.365 1.1l.308.175l.626.333l1.77.903L9.01 17.6a5 5 0 0 1-.014-.303a5 5 0 0 1 .114-1.113l.067-.288zm11.164-5.764a1 1 0 0 0-1.028 1.712l.1.06l2.1 1.1a1 1 0 0 0 1.028-1.712l-.1-.06z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="offcanvas offcanvas-end w-50"
+                tabindex="-1"
+                id="my-header-offcanvas"
+                aria-labelledby="offcanvasTopLabel"
+              >
+                <div
+                  class="offcanvas-header d-flex justify-content-between align-content-start"
+                >
+                  <a
+                    href="#"
+                    class="offcanvas-item px-2 position-relative d-inline cart-link bg-transparent"
+                  >
+                    <span
+                      class="text-white rounded-5 cart-count bg-my-primary position-absolute end-0"
+                      >0</span
+                    >
+                    <img src="../images/icons/cart.svg" alt=""
+                  /></a>
+
+                  <button
+                    type="button"
+                    class="rounded-5 py-1 my-close-open-btn"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M149.688 85.625c-1.234.005-2.465.033-3.72.063c-33.913.806-75.48 10.704-127.25 33.718V362.78c60.77-28.82 106.718-37.067 144.22-33.092c33.502 3.55 59.685 16.66 83.562 31.187v-242.97c-23.217-17.744-50.195-30.04-85.97-32a185 185 0 0 0-10.843-.28zm211.968 0c-3.7-.016-7.322.088-10.844.28c-35.773 1.96-62.75 14.256-85.968 32v242.97c23.876-14.527 50.06-27.637 83.562-31.188c37.502-3.974 83.45 4.272 144.22 33.094V119.407c-51.77-23.014-93.337-32.912-127.25-33.72c-1.255-.028-2.486-.056-3.72-.06zm5.72 261.78c-1.038-.002-2.074.017-3.095.033c-4.808.075-9.43.37-13.905.843c-33.932 3.597-59.603 17.976-85.53 34.44v.28c-6.554-1.99-13.02-2.37-19.408-.97c-25.566-16.177-51.003-30.202-84.468-33.75c-5.595-.592-11.44-.883-17.564-.842c-32.04.213-71.833 9.778-124.687 35.937v42.53c60.77-28.823 106.714-37.067 144.218-33.092c18.545 1.965 34.837 6.845 49.75 13.28c-4.682 6.064-9.308 13.268-13.875 21.688h117.156c-5.93-8.22-11.798-15.414-17.626-21.56c14.996-6.503 31.39-11.43 50.062-13.408c37.503-3.974 83.448 4.27 144.22 33.094v-42.53c-53.16-26.31-93.115-35.863-125.25-35.97z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="offcanvas-body px-0">
+                  <ul
+                    class="fw-bold text-center rounded-5 header-off-c list-unstyled"
+                  >
+                    <li class=""></li>
+
+                    <!-- pages -->
+
+                    <li class="d-block d-sm-none bg-transparent">
+                      <span class="fw-bold fs-4">Pages</span>
+                    </li>
+                    <li class="d-block d-sm-none">
+                      <a class="offcanvas-item" href="../index.html">Home</a>
+                    </li>
+                    <li class="d-block d-sm-none">
+                      <a class="offcanvas-item" href="#">Categories</a>
+                    </li>
+                    <li class="d-block d-sm-none">
+                      <a class="offcanvas-item" href="#">About</a>
+                    </li>
+                    <li class="d-block d-sm-none">
+                      <a class="offcanvas-item" href="#">Blog</a>
+                    </li>
+                    <li class="d-block d-sm-none">
+                      <a class="offcanvas-item" href="#">Contect</a>
+                    </li>
+
+                    <!-- Other -->
+
+                    <li><a class="offcanvas-item" href="#">FAQ</a></li>
+
+                    <li><a class="offcanvas-item" href="#">Track Order</a></li>
+
+                    <li class="mx-4 mt-2">
+                      <button
+                        class="btn offcanvas-item my-btn-primary signin-btn rounded-5 text-white"
+                      >
+                        Sign In
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- normal right side-->
+
+            <div class="collapse navbar-collapse justify-content-end">
+              <ul
+                class="d-flex navbar-nav align-items-center justify-content-center"
+              >
+                <li><a class="nav-link" href="#">FAQ</a></li>
+                <li><a class="nav-link" href="#">Track Order</a></li>
+                <a href="#" class="px-md-1 position-relative">
+                  <span
+                    class="text-white rounded-5 cart-count bg-my-primary position-absolute end-0"
+                    >0</span
+                  >
+                  <img src="../images/icons/cart.svg" alt=""
+                /></a>
+                <button
+                  class="btn my-btn-primary signin-btn ms-1 rounded-5 text-white"
+                >
+                  Sign In
+                </button>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- pages-nav -->
+
+      <nav
+        class="navbar py-2 navbar-expand-sm bg-light-pink align-items-center justify-content-center"
+      >
+        <div class="container">
+          <div
+            class="collapse navbar-collapse justify-content-center align-items-center"
+          >
+            <ul id="pages-drop" class="fw-bold navbar-nav">
+              <li>
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Contect</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero -->
+      <section class="hero-section">
+        <div class="container position-relative bg">
+          <img
+            class="w-100 img-fluid"
+            src="../images/hero-imgs/categories-hero.webp"
+            alt=""
+          />
+          <h2
+            class="position-absolute top-50 start-50 translate-middle text-white display-4 fw-bold"
+          >
+            أصناف الكتب
+          </h2>
+        </div>
+      </section>
+
+      <section class="blogs-section py-5">
+        <div class="container">
+          <div class="row m-0 justify-content-between">
+            <div class="col-12 col-lg-4 p-0 mb-lg-0 mb-5">
+              <div class="bg-light-pink p-3 text-end">
+                <h3>اختر حسب الموضوغ</h3>
+                <div class="text-end mt-4">
+                  <label class="form-check-label" for="check1"> الفقه </label
+                  ><input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check1"
+                  />
+                </div>
+                <div class="text-end">
+                  <label class="form-check-label" for="check2"> الحديث </label
+                  ><input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check2"
+                  />
+                </div>
+                <div class="text-end">
+                  <label class="form-check-label" for="check3"> التزكوية </label
+                  ><input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check3"
+                  />
+                </div>
+                <div class="text-end">
+                  <label class="form-check-label" for="check4"> التفسير </label
+                  ><input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check4"
+                  />
+                </div>
+                <div class="text-end">
+                  <label class="form-check-label" for="check5"> الفتاوي </label>
+                  <input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check5"
+                  />
+                </div>
+              </div>
+              <div class="bg-light-pink p-3 text-end">
+                <label for="range4" class="form-label"><h3>السعر الاعلى</h3></label>
+                <input
+                  type="range"
+                  class="form-range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  id="range4"
+                />
+                <output
+                  for="range4"
+                  id="rangeValue"
+                  aria-hidden="true"
+                ></output>
+
+                <script>
+                  // This is an example script, please modify as needed
+                  const rangeInput = document.getElementById("range4");
+                  const rangeOutput = document.getElementById("rangeValue");
+
+                  // Set initial value
+                  rangeOutput.textContent = rangeInput.value;
+
+                  rangeInput.addEventListener("input", function () {
+                    rangeOutput.textContent = this.value;
+                  });
+                </script>
+              </div>
+              <div class="bg-light-pink p-3 text-end">
+                <h3>اختر حسب الناشر</h3>
+                <div class="text-end mt-4">
+                  <label class="form-check-label" for="check1">
+                    دار عطاءات العلم</label
+                  ><input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check1"
+                  />
+                </div>
+                <div class="text-end">
+                  <label class="form-check-label" for="check2">
+                    تكوين للدراسات والابحاث</label
+                  ><input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check2"
+                  />
+                </div>
+                <div class="text-end">
+                  <label class="form-check-label" for="check3">
+                    دار الحضارة للنشر والتوزيع</label
+                  ><input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check3"
+                  />
+                </div>
+                <div class="text-end">
+                  <label class="form-check-label" for="check4">
+                    منار الفكر</label
+                  ><input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check4"
+                  />
+                </div>
+                <div class="text-end">
+                  <label class="form-check-label" for="check5">
+                    داراللؤلؤة
+                  </label>
+                  <input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check5"
+                  />
+                </div>
+              </div>
+              <div class="bg-light-pink p-3 text-end">
+                <h3>اختر حسب المؤلف</h3>
+                <div class="text-end mt-4">
+                  <label class="form-check-label" for="check1"> ابن القيم</label
+                  ><input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check1"
+                    checked
+                  />
+                </div>
+                <div class="text-end">
+                  <label class="form-check-label" for="check2"> ابن تيمية</label
+                  ><input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check2"
+                  />
+                </div>
+                <div class="text-end">
+                  <label class="form-check-label" for="check3">
+                    عبد العزيز الطريفي</label
+                  ><input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check3"
+                  />
+                </div>
+                <div class="text-end">
+                  <label class="form-check-label" for="check4">
+                    احمد السيد</label
+                  ><input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check4"
+                  />
+                </div>
+                <div class="text-end">
+                  <label class="form-check-label" for="check5">
+                    ابراهيم السكران
+                  </label>
+                  <input
+                    class="form-check-input rounded-5 ms-2"
+                    type="checkbox"
+                    value=""
+                    id="check5"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row col-12 col-lg-8 row-gap-5 pe-lg-4 p-0 m-0">
+              <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card rounded-5 text-center" style="width: rem">
+                  <img
+                    src="../images/books/الصواعق المرسلة.webp"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <a href="#" class="my-card-title"
+                      ><h4>الصواعق المرسلة</h4></a
+                    >
+                    <p class="my-card-author mb-0">ابن القيم</p>
+                    <div class="my-card-footer row justify-content-evenly">
+                      <div
+                        class="my-card-review col-9 d-flex flex-column align-items-start"
+                      >
+                        <div class="my-card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="my-card-reviews-number"
+                          >(<span class="reviews-number">120</span>
+                          Review)</span
+                        >
+                      </div>
+                      <span
+                        class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                        >50$</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card rounded-5 text-center">
+                  <img
+                    src="../images/books/الداء والدواء.webp"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <a href="#" class="my-card-title"><h4>الداء والدواء</h4></a>
+                    <p class="my-card-author mb-0">ابن القيم</p>
+                    <div class="my-card-footer row justify-content-evenly">
+                      <div
+                        class="my-card-review col-9 d-flex flex-column align-items-start"
+                      >
+                        <div class="my-card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="my-card-reviews-number"
+                          >(<span class="reviews-number">120</span>
+                          Review)</span
+                        >
+                      </div>
+                      <span
+                        class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                        >50$</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card rounded-5 text-center">
+                  <img
+                    src="../images/books/زاد المعاد.webp"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <a href="#" class="my-card-title"><h4>زاد المعاد</h4></a>
+                    <p class="my-card-author mb-0">ابن القيم</p>
+                    <div class="my-card-footer row justify-content-evenly">
+                      <div
+                        class="my-card-review col-9 d-flex flex-column align-items-start"
+                      >
+                        <div class="my-card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="my-card-reviews-number"
+                          >(<span class="reviews-number">120</span>
+                          Review)</span
+                        >
+                      </div>
+                      <span
+                        class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                        >50$</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card rounded-5 text-center">
+                  <img
+                    src="../images/books/الرسالة التبوكية.webp"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <a href="#" class="my-card-title"
+                      ><h4>الرسالة التبوكية</h4></a
+                    >
+                    <p class="my-card-author mb-0">ابن القيم</p>
+                    <div class="my-card-footer row justify-content-evenly">
+                      <div
+                        class="my-card-review col-9 d-flex flex-column align-items-start"
+                      >
+                        <div class="my-card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="my-card-reviews-number"
+                          >(<span class="reviews-number">120</span>
+                          Review)</span
+                        >
+                      </div>
+                      <span
+                        class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                        >50$</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12 d-none d-lg-block">
+                <div class="card rounded-5 text-center">
+                  <img
+                    src="../images/books/الفهارس العلمية.webp"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <a href="#" class="my-card-title"
+                      ><h4>الفهارس العلمية</h4></a
+                    >
+                    <p class="my-card-author mb-0">ابن القيم</p>
+                    <div class="my-card-footer row justify-content-evenly">
+                      <div
+                        class="my-card-review col-9 d-flex flex-column align-items-start"
+                      >
+                        <div class="my-card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="my-card-reviews-number"
+                          >(<span class="reviews-number">120</span>
+                          Review)</span
+                        >
+                      </div>
+                      <span
+                        class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                        >50$</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12 d-none d-lg-block">
+                <div class="card rounded-5 text-center">
+                  <img
+                    src="../images/books/الكافية الشافية.webp"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <a href="#" class="my-card-title"
+                      ><h4>الكافية الشافية</h4></a
+                    >
+                    <p class="my-card-author mb-0">ابن القيم</p>
+                    <div class="my-card-footer row justify-content-evenly">
+                      <div
+                        class="my-card-review col-9 d-flex flex-column align-items-start"
+                      >
+                        <div class="my-card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="my-card-reviews-number"
+                          >(<span class="reviews-number">120</span>
+                          Review)</span
+                        >
+                      </div>
+                      <span
+                        class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                        >50$</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12 d-none d-lg-block">
+                <div class="card rounded-5 text-center">
+                  <img
+                    src="../images/books/عدة الصابرين.webp"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <a href="#" class="my-card-title"><h4>عدة الصابرين</h4></a>
+                    <p class="my-card-author mb-0">ابن القيم</p>
+                    <div class="my-card-footer row justify-content-evenly">
+                      <div
+                        class="my-card-review col-9 d-flex flex-column align-items-start"
+                      >
+                        <div class="my-card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="my-card-reviews-number"
+                          >(<span class="reviews-number">120</span>
+                          Review)</span
+                        >
+                      </div>
+                      <span
+                        class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                        >50$</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12 d-none d-lg-block">
+                <div class="card rounded-5 text-center">
+                  <img
+                    src="../images/books/كتاب الروح.webp"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <a href="#" class="my-card-title"><h4>كتاب الروح</h4></a>
+                    <p class="my-card-author mb-0">ابن القيم</p>
+                    <div class="my-card-footer row justify-content-evenly">
+                      <div
+                        class="my-card-review col-9 d-flex flex-column align-items-start"
+                      >
+                        <div class="my-card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="my-card-reviews-number"
+                          >(<span class="reviews-number">120</span>
+                          Review)</span
+                        >
+                      </div>
+                      <span
+                        class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                        >50$</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12 d-none d-lg-block">
+                <div class="card rounded-5 text-center">
+                  <img
+                    src="../images/books/جلاء الافهام.webp"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <a href="#" class="my-card-title"><h4>جلاء الافهام</h4></a>
+                    <p class="my-card-author mb-0">ابن القيم</p>
+                    <div class="my-card-footer row justify-content-evenly">
+                      <div
+                        class="my-card-review col-9 d-flex flex-column align-items-start"
+                      >
+                        <div class="my-card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="my-card-reviews-number"
+                          >(<span class="reviews-number">120</span>
+                          Review)</span
+                        >
+                      </div>
+                      <span
+                        class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                        >50$</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12 d-none d-md-block">
+                <div class="card rounded-5 text-center">
+                  <img
+                    src="../images/books/روضة المحبين.webp"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <a href="#" class="my-card-title"><h4>روضة المحبين</h4></a>
+                    <p class="my-card-author mb-0">ابن القيم</p>
+                    <div class="my-card-footer row justify-content-evenly">
+                      <div
+                        class="my-card-review col-9 d-flex flex-column align-items-start"
+                      >
+                        <div class="my-card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="my-card-reviews-number"
+                          >(<span class="reviews-number">120</span>
+                          Review)</span
+                        >
+                      </div>
+                      <span
+                        class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                        >50$</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12 d-none d-md-block">
+                <div class="card rounded-5 text-center">
+                  <img
+                    src="../images/books/مدلرج السالكين.webp"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <a href="#" class="my-card-title"
+                      ><h4>مدارج السالكين</h4></a
+                    >
+                    <p class="my-card-author mb-0">ابن القيم</p>
+                    <div class="my-card-footer row justify-content-evenly">
+                      <div
+                        class="my-card-review col-9 d-flex flex-column align-items-start"
+                      >
+                        <div class="my-card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="my-card-reviews-number"
+                          >(<span class="reviews-number">120</span>
+                          Review)</span
+                        >
+                      </div>
+                      <span
+                        class="my-card-price col col-sm-3 align-items-center d-flex justify-content-center"
+                        >50$</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- newsletter -->
+      <section class="newsletter py-5 px-2">
+        <div class="p-5 container rounded-5">
+          <div class="row text-white text-center p-2 p-sm-5 row-gap-4">
+            <h3 class="fw-bold">Join Newsletter</h3>
+            <p class="d-none d-sm-block">
+              Lorem started its journey with cast iron (CI) products in 1980.
+              The initial main objective was to ensure pure water and affordable
+              irrigation.
+            </p>
+            <form class="d-flex flex-sm-row flex-column row-gap-2">
+              <input
+                class="form-control me-2 rounded-5 shadow-none"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <button class="btn my-btn-primary rounded-5" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div
+          class="row py-5 gap-2 text-sm-start text-center align-items-sm-start"
+        >
+          <div
+            class="col-lg-3 col-sm-12 d-flex flex-column align-items-lg-start align-items-center"
+          >
+            <div
+              class="footer-logo d-flex justify-content-start gap-1 align-items-center"
+            >
+              <svg
+                class="hamada-logo-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  fill="none"
+                  stroke="#fe1716"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.2"
+                >
+                  <path
+                    d="M17.506 2.019C12.829 2.835 12 7.5 12 7.5V22s.887-4.873 6-5.441c.55-.061 1-.501 1-1.053V3.393c0-.828-.678-1.517-1.494-1.374M5.333 5c2.46-.003 4.836.887 6.667 2.5V22a10.07 10.07 0 0 0-6.667-2.5c-1.562 0-2.343 0-2.688-.22a1.16 1.16 0 0 1-.424-.425C2 18.51 2 17.895 2 16.663v-8.26c0-1.428 0-2.141.549-2.72c.548-.579 1.11-.609 2.234-.668Q5.056 5 5.333 5"
+                  />
+                  <path
+                    d="M12 22.001a10.07 10.07 0 0 1 6.667-2.5c1.562 0 2.343 0 2.688-.22c.207-.133.291-.218.424-.425c.221-.345.221-.96.221-2.192v-8.26c0-1.428 0-2.141-.549-2.72S20.123 5.06 19 5"
+                  />
+                </g>
+              </svg>
+              <span class="fw-bold">HAMADA </span>
+              <span> BookShop</span>
+            </div>
+            <span class="footer-info">
+              Get the breathing space now, and we’ll extend your term at the
+              other end year for go.
+            </span>
+            <div
+              class="social-media gap-3 d-flex flex-sm-row align-items-center justify-content-start"
+            >
+              <a class="social-media-a rounded-5"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a class="social-media-a rounded-5"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a class="social-media-a rounded-5"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a class="social-media-a rounded-5"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-8 row text-sm-start text-center">
+            <span class="fw-bold">Book Category</span>
+            <div class="col flex-column">
+              <ul class="flex-column nav text-center text-sm-start">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">History</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Horror - Thriller</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Love Stories</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Science Fiction</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Business</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col flex-column">
+              <ul class="flex-column nav text-center text-sm-start">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Biography</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Astrology</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Digital Marketing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Software Development</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Ecommerce</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 text-center">
+            <span class="fw-bold pe-0 pe-sm-2">Site Map</span>
+            <div class="col row flex-column">
+              <ul class="flex-column align-content-center nav text-sm-start">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
