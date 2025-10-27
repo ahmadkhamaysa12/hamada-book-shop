@@ -342,8 +342,8 @@ footer .nav-link:hover {
   display: inline-block;
   background-color: var(--gray-icon);
 }
-.single-blog{
-  box-shadow: 0px 8px 15px rgba(0, 0, 0,0.1);
+.single-blog {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 .blog-date {
   background-color: var(--my-primary);
@@ -358,4 +358,16 @@ footer .nav-link:hover {
   padding: 0.7rem 2rem;
   left: 40px;
   top: -70px;
+}
+.blogs-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.blogs-section .page-link:hover,
+.blogs-section .page-link:active,
+.blogs-section .page-link:focus,.blogs-section .active{
+  border: 1px solid var(--my-primary);
+  color: #fff;
+  background-color: var(--my-primary) !important;
 }
