@@ -247,9 +247,10 @@ p {
   color: var(--my-dark-blue);
 }
 .social-media-a {
+  
   color: var(--gray-icon);
   outline: solid 0.5px var(--gray-icon);
-  padding: 0.1rem 0.2rem;
+  padding: 0.2rem 0.2rem 0.01rem ;
   background-color: transparent;
   transition: all 0.3s ease-in-out;
 }
@@ -323,7 +324,7 @@ footer .nav-link:hover {
 }
 
 .single-blog .card-link-1,
-.single-blog .card-link-2 {
+.single-blog .card-link-2,.blog-icons .card-link-2,.blog-icons .card-link-1 {
   color: var(--gray-icon);
 }
 .card-link-1:hover {
@@ -335,7 +336,8 @@ footer .nav-link:hover {
 .card-title-a:hover {
   color: var(--my-primary);
 }
-.single-blog .card-link-2::before {
+.blog-icons
+.single-blog .card-link-1::before,.blog-icons .card-link-1::before {
   content: "";
   margin: 0px 10px;
   width: 2px;

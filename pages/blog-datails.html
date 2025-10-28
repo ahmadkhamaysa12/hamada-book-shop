@@ -19,6 +19,13 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- arabicfont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- icons -->
     <link
       rel="stylesheet"
@@ -50,63 +57,10 @@
     <header class="sticky-top">
       <nav class="navbar navbar-expand-md justify-content-evenly py-0">
         <div class="container row d-flex">
-          <!-- left side -->
-          <div
-            class="col-md-7 py-3 col-10 col-sm-9 lest-side gap-1 d-flex gap-sm-4 gap-0 align-items-center justify-content-start"
-          >
-            <a
-              href="#"
-              class="hamada-logo text-decoration-none color-my-primary"
-            >
-              <div class="d-flex py-1 gap-1 align-items-center">
-                <svg
-                  class="hamada-logo-svg"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
-                >
-                  <g
-                    fill="none"
-                    stroke="#fe1716"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.2"
-                  >
-                    <path
-                      d="M17.506 2.019C12.829 2.835 12 7.5 12 7.5V22s.887-4.873 6-5.441c.55-.061 1-.501 1-1.053V3.393c0-.828-.678-1.517-1.494-1.374M5.333 5c2.46-.003 4.836.887 6.667 2.5V22a10.07 10.07 0 0 0-6.667-2.5c-1.562 0-2.343 0-2.688-.22a1.16 1.16 0 0 1-.424-.425C2 18.51 2 17.895 2 16.663v-8.26c0-1.428 0-2.141.549-2.72c.548-.579 1.11-.609 2.234-.668Q5.056 5 5.333 5"
-                    />
-                    <path
-                      d="M12 22.001a10.07 10.07 0 0 1 6.667-2.5c1.562 0 2.343 0 2.688-.22c.207-.133.291-.218.424-.425c.221-.345.221-.96.221-2.192v-8.26c0-1.428 0-2.141-.549-2.72S20.123 5.06 19 5"
-                    />
-                  </g>
-                </svg>
-                <span class="fw-bold span1-logo">HAMADA </span>
-                <span class="span2-logo"> BookShop</span>
-              </div>
-            </a>
-
-            <form
-              class="input-group d-flex gap-2 h-search rounded-5 justify-content-between"
-            >
-              <input
-                type="text"
-                class="border-0 rounded-5 ps-3 pe-5 form-control shadow-none overflow-x-auto z-0"
-                placeholder="Search book by author or publisher"
-              />
-              <button
-                type="submit"
-                class="btn border-0 rounded-5 position-absolute top-0 end-0 z-0"
-              >
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </form>
-          </div>
-
           <!-- right side -->
 
           <div
-            class="right-side d-flex col-md-5 col-sm-3 col-2 justify-content-sm-end justify-content-center"
+            class="right-side d-flex col-md-5 col-sm-3 col-2 justify-content-sm-start justify-content-center"
           >
             <!-- drop-down -->
 
@@ -130,7 +84,7 @@
                 </svg>
               </button>
               <div
-                class="offcanvas offcanvas-end w-50"
+                class="offcanvas offcanvas-start w-50"
                 tabindex="-1"
                 id="my-header-offcanvas"
                 aria-labelledby="offcanvasTopLabel"
@@ -176,35 +130,41 @@
                     <!-- pages -->
 
                     <li class="d-block d-sm-none bg-transparent">
-                      <span class="fw-bold fs-4">Pages</span>
+                      <span class="fw-bold fs-4">الصفحات</span>
                     </li>
                     <li class="d-block d-sm-none">
-                      <a class="offcanvas-item" href="../index.html">Home</a>
+                      <a class="offcanvas-item" href="#">الرئيسية</a>
                     </li>
                     <li class="d-block d-sm-none">
-                      <a class="offcanvas-item" href="#">Categories</a>
+                      <a class="offcanvas-item" href="./pages/categories.html"
+                        >الأصناف</a
+                      >
                     </li>
                     <li class="d-block d-sm-none">
-                      <a class="offcanvas-item" href="#">About</a>
+                      <a class="offcanvas-item" href="#">من نحن</a>
                     </li>
                     <li class="d-block d-sm-none">
-                      <a class="offcanvas-item" href="#">Blog</a>
+                      <a class="offcanvas-item" href="./pages/blog.html"
+                        >المدونة</a
+                      >
                     </li>
                     <li class="d-block d-sm-none">
-                      <a class="offcanvas-item" href="#">Contect</a>
+                      <a class="offcanvas-item" href="#">تواصل معنا</a>
                     </li>
 
                     <!-- Other -->
 
-                    <li><a class="offcanvas-item" href="#">FAQ</a></li>
+                    <li>
+                      <a class="offcanvas-item" href="#">الأسئلة المتكررة</a>
+                    </li>
 
-                    <li><a class="offcanvas-item" href="#">Track Order</a></li>
+                    <li><a class="offcanvas-item" href="#">تتبع طلبك</a></li>
 
                     <li class="mx-4 mt-2">
                       <button
                         class="btn offcanvas-item my-btn-primary signin-btn rounded-5 text-white"
                       >
-                        Sign In
+                        تسجيل الدخول
                       </button>
                     </li>
                   </ul>
@@ -216,10 +176,13 @@
 
             <div class="collapse navbar-collapse justify-content-end">
               <ul
-                class="d-flex navbar-nav align-items-center justify-content-center"
+                class="d-flex navbar-nav align-items-center justify-content-center text-center"
               >
-                <li><a class="nav-link" href="#">FAQ</a></li>
-                <li><a class="nav-link" href="#">Track Order</a></li>
+                <button
+                  class="btn my-btn-primary signin-btn ms-1 rounded-5 text-white"
+                >
+                  تسجيل الدخول
+                </button>
                 <a href="#" class="px-md-1 position-relative">
                   <span
                     class="text-white rounded-5 cart-count bg-my-primary position-absolute end-0"
@@ -227,13 +190,63 @@
                   >
                   <img src="../images/icons/cart.svg" alt=""
                 /></a>
-                <button
-                  class="btn my-btn-primary signin-btn ms-1 rounded-5 text-white"
-                >
-                  Sign In
-                </button>
+                <li><a class="nav-link" href="#">الأسئلة المتكررة</a></li>
+                <li><a class="nav-link" href="#">تتبع طلبك</a></li>
               </ul>
             </div>
+          </div>
+
+          <!-- left side -->
+          <div
+            class="col-md-7 py-3 col-10 col-sm-9 lest-side gap-1 d-flex gap-sm-4 gap-0 align-items-center justify-content-start"
+          >
+            <form
+              class="input-group d-flex gap-2 h-search rounded-5 justify-content-between"
+            >
+              <input
+                type="text"
+                class="border-0 rounded-5 ps-3 pe-5 form-control shadow-none overflow-x-auto z-0 text-center"
+                placeholder="المؤلف أو دار النشر"
+              />
+              <button
+                type="submit"
+                class="btn border-0 rounded-5 position-absolute top-0 end-0 z-0"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <a
+              href="#"
+              class="hamada-logo text-decoration-none color-my-primary"
+            >
+              <div class="d-flex py-1 gap-1 align-items-center">
+                <span class="span2-logo fw-bold">حمادة</span>
+                <span class="span1-logo"> مكتبة</span>
+
+                <svg
+                  class="hamada-logo-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="#fe1716"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.2"
+                  >
+                    <path
+                      d="M17.506 2.019C12.829 2.835 12 7.5 12 7.5V22s.887-4.873 6-5.441c.55-.061 1-.501 1-1.053V3.393c0-.828-.678-1.517-1.494-1.374M5.333 5c2.46-.003 4.836.887 6.667 2.5V22a10.07 10.07 0 0 0-6.667-2.5c-1.562 0-2.343 0-2.688-.22a1.16 1.16 0 0 1-.424-.425C2 18.51 2 17.895 2 16.663v-8.26c0-1.428 0-2.141.549-2.72c.548-.579 1.11-.609 2.234-.668Q5.056 5 5.333 5"
+                    />
+                    <path
+                      d="M12 22.001a10.07 10.07 0 0 1 6.667-2.5c1.562 0 2.343 0 2.688-.22c.207-.133.291-.218.424-.425c.221-.345.221-.96.221-2.192v-8.26c0-1.428 0-2.141-.549-2.72S20.123 5.06 19 5"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </a>
           </div>
         </div>
       </nav>
@@ -249,38 +262,37 @@
           >
             <ul id="pages-drop" class="fw-bold navbar-nav">
               <li>
-                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="#">تواصل معنا</a>
               </li>
               <li>
-                <a class="nav-link" href="#">Categories</a>
+                <a class="nav-link" href="./pages/about.html">من نحن</a>
               </li>
               <li>
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="./pages/blog.html">المدونة</a>
               </li>
               <li>
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="./pages/categories.html">الأصناف</a>
               </li>
               <li>
-                <a class="nav-link" href="#">Contect</a>
+                <a class="nav-link" href="../index.html">الرئيسية</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-
     <main>
       <section class="hero-section">
         <div class="container position-relative bg">
           <img
             class="w-100 img-fluid"
-            src="../images/hero-imgs/blog-hero.webp"
+            src="../images/blog-imgs/blog-3.webp"
             alt=""
           />
           <h2
             class="position-absolute top-50 start-50 translate-middle text-white display-4 fw-bold"
           >
-            المدونات
+            المدونة
           </h2>
         </div>
       </section>
@@ -288,178 +300,6 @@
       <section class="blogs-section py-5">
         <div class="container">
           <div class="row m-0 justify-content-between">
-            <div class="row col-12 col-lg-8 row-gap-5 pe-lg-4 p-0 m-0">
-              <div class="card single-blog p-0">
-                <img
-                  src="../images/blog-imgs/blog-1.webp"
-                  class="card-img-top img-fluid"
-                  alt="blog-1-img"
-                />
-                <div class="card-body position-relative">
-                  <a href="#" class="rounded-3 position-absolute blog-date">
-                    <h3>15</h3>
-                    <span>Jan</span>
-                  </a>
-                  <a href="" class="card-title-a"
-                    ><h4 class="card-title">
-                      Google inks pact for new 35-storey office
-                    </h4></a
-                  >
-                  <p class="card-text">
-                    That dominion stars lights dominion divide years for fourth
-                    have don't stars is that he earth it first without heaven in
-                    place seed it second morning saying.
-                  </p>
-                </div>
-                <div class="card-body">
-                  <a href="#" class="card-link-1">
-                    <i class="fa-solid fa-user"></i> Travel, Lifestyle</a
-                  >
-                  <a href="#" class="card-link-2"
-                    ><i class="fa-solid fa-comments"></i> Another link</a
-                  >
-                </div>
-              </div>
-              <div class="card single-blog p-0">
-                <img
-                  src="../images/blog-imgs/blog-2.webp"
-                  class="card-img-top img-fluid"
-                  alt="blog-1-img"
-                />
-                <div class="card-body position-relative">
-                  <a href="#" class="rounded-3 position-absolute blog-date">
-                    <h3>15</h3>
-                    <span>Jan</span>
-                  </a>
-                  <a href="" class="card-title-a"
-                    ><h4 class="card-title">
-                      Google inks pact for new 35-storey office
-                    </h4></a
-                  >
-                  <p class="card-text">
-                    That dominion stars lights dominion divide years for fourth
-                    have don't stars is that he earth it first without heaven in
-                    place seed it second morning saying.
-                  </p>
-                </div>
-                <div class="card-body">
-                  <a href="#" class="card-link-1">
-                    <i class="fa-solid fa-user"></i> Travel, Lifestyle</a
-                  >
-                  <a href="#" class="card-link-2"
-                    ><i class="fa-solid fa-comments"></i> Another link</a
-                  >
-                </div>
-              </div>
-              <div class="card single-blog p-0">
-                <img
-                  src="../images/blog-imgs/blog-3.webp"
-                  class="card-img-top img-fluid"
-                  alt="blog-1-img"
-                />
-                <div class="card-body position-relative">
-                  <a href="#" class="rounded-3 position-absolute blog-date">
-                    <h3>15</h3>
-                    <span>Jan</span>
-                  </a>
-                  <a href="" class="card-title-a"
-                    ><h4 class="card-title">
-                      Google inks pact for new 35-storey office
-                    </h4></a
-                  >
-                  <p class="card-text">
-                    That dominion stars lights dominion divide years for fourth
-                    have don't stars is that he earth it first without heaven in
-                    place seed it second morning saying.
-                  </p>
-                </div>
-                <div class="card-body">
-                  <a href="#" class="card-link-1">
-                    <i class="fa-solid fa-user"></i> Travel, Lifestyle</a
-                  >
-                  <a href="#" class="card-link-2"
-                    ><i class="fa-solid fa-comments"></i> Another link</a
-                  >
-                </div>
-              </div>
-              <div class="card single-blog p-0">
-                <img
-                  src="../images/blog-imgs/blog-4.webp"
-                  class="card-img-top img-fluid"
-                  alt="blog-1-img"
-                />
-                <div class="card-body position-relative">
-                  <a href="#" class="rounded-3 position-absolute blog-date">
-                    <h3>15</h3>
-                    <span>Jan</span>
-                  </a>
-                  <a href="" class="card-title-a"
-                    ><h4 class="card-title">
-                      Google inks pact for new 35-storey office
-                    </h4></a
-                  >
-                  <p class="card-text">
-                    That dominion stars lights dominion divide years for fourth
-                    have don't stars is that he earth it first without heaven in
-                    place seed it second morning saying.
-                  </p>
-                </div>
-                <div class="card-body">
-                  <a href="#" class="card-link-1">
-                    <i class="fa-solid fa-user"></i> Travel, Lifestyle</a
-                  >
-                  <a href="#" class="card-link-2"
-                    ><i class="fa-solid fa-comments"></i> Another link</a
-                  >
-                </div>
-              </div>
-              <div class="card single-blog p-0">
-                <img
-                  src="../images/blog-imgs/blog-5.webp"
-                  class="card-img-top img-fluid"
-                  alt="blog-1-img"
-                />
-                <div class="card-body position-relative">
-                  <a href="#" class="rounded-3 position-absolute blog-date">
-                    <h3>15</h3>
-                    <span>Jan</span>
-                  </a>
-                  <a href="" class="card-title-a"
-                    ><h4 class="card-title">
-                      Google inks pact for new 35-storey office
-                    </h4></a
-                  >
-                  <p class="card-text">
-                    That dominion stars lights dominion divide years for fourth
-                    have don't stars is that he earth it first without heaven in
-                    place seed it second morning saying.
-                  </p>
-                </div>
-                <div class="card-body">
-                  <a href="#" class="card-link-1">
-                    <i class="fa-solid fa-user"></i> Travel, Lifestyle</a
-                  >
-                  <a href="#" class="card-link-2"
-                    ><i class="fa-solid fa-comments"></i> Another link</a
-                  >
-                </div>
-              </div>
-              <nav aria-label="..." class="d-flex justify-content-center">
-                <ul class="pagination">
-                  <li class="page-item">
-                    <a href="#" class="page-link">الصفحة السابقة</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item ">
-                    <a class="page-link active" href="#" aria-current="page">2</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">الصفحة التالية</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
             <div class="col-12 col-lg-4 p-0 mt-lg-0 mt-5">
               <div class="bg-light-pink">
                 <div class="input-group mb-4 p-3">
@@ -615,22 +455,116 @@
                 </div>
               </div>
             </div>
+            <div class="col-12 col-lg-8 ps-lg-4 p-0 m-0 text-end">
+              <div>
+                <img
+                  src="../images/blog-imgs/blog-3.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="my-3">
+                <h3>
+                  هل المناظرة الموجودة في كتب التاريخ بين شيخ الإسلام ابن تيمية
+                  وابن عطاء الله صحيحة أم لا؟
+                </h3>
+              </div>
+              <div class="blog-icons mb-3 d-flex flex-row-reverse">
+                <a href="#" class="card-link-1">
+                  الكاتب <i class="fa-solid fa-user"></i>
+                  <a href="#" class="card-link-2">
+                    التعليقات <i class="fa-solid fa-comments"></i
+                  ></a>
+                </a>
+              </div>
+
+              <p class="color-my-primary mb-3 fs-5">
+                : الحمد لله، والصلاة والسلام على رسول الله، وعلى آله وصحبه أما
+                بعد
+              </p>
+              <p>
+                فهذه المناظرة تطرح بكثرة في المنتديات الصوفية والشيعية،
+                وينسبونها -كذبا وبهتانا- إلى ابن كثير، وابن الأثير كمصادر
+                تاريخية، مع أن ابن الأثير قد مات قبل أن يولد شيخ الإسلام ابن
+                تيمية بأكثر من ثلاثين سنة، وبين وفاته وبين زمن المناظرة المزعومة
+                نحو قرن من الزمان.
+              </p>
+              <div class="bg-light-pink p-4 mb-3">
+                <div class="bg-white p-3">
+                  <p>
+                    : وأما ابن كثير، فلم يذكر شيئًا من ذلك، وإنما قال ابن كثير
+                    في أحداث سنة 707 ه <br /><br />
+                    استهلت.. والشيخ تقي الدين ابن تيمية معتقل في قلعة الجبل
+                    بمصر.. وفي يوم الجمعة رابع عشر صفر اجتمع قاضي القضاة بدر
+                    الدين بن جماعة بالشيخ تقي الدين ابن تيمية في دار الأوحدي من
+                    قلعة الجبل، وطال بينهما الكلام ثم، تفرقا قبل الصلاة، والشيخ
+                    تقي الدين مصمم على عدم الخروج من السجن، فلما كان يوم الجمعة
+                    الثالث والعشرين من ربيع الأول، جاء الأمير حسام الدين مهنا بن
+                    عيسى ملك العرب إلى السجن بنفسه، وأقسم على الشيخ تقي الدين
+                    ليخرجن إليه، فلما خرج، أقسم عليه ليأتين معه إلى دار سلار،
+                    فاجتمع به بعض الفقهاء بدار سلار، وجرت بينهم بحوث كثيرة، ثم
+                    فرقت بينهم الصلاة، ثم اجتمعوا إلى المغرب، وبات الشيخ تقي
+                    الدين عند سلار، ثم اجتمعوا يوم الأحد بمرسوم السلطان جميع
+                    النهار، ولم يحضر أحد من القضاة، بل اجتمع من الفقهاء خلق
+                    كثير.. وطلبوا القضاة، فاعتذروا بأعذار بعضهم بالمرض وبعضهم
+                    بغيره، لمعرفتهم بما ابن تيمية منطو عليه من العلوم والأدلة،
+                    وأن أحدا من الحاضرين لا يطيقه.. وبات الشيخ عند نائب السلطنة،
+                    وجاء الأمير حسام الدين مهنا يريد أن يستصحب الشيخ تقي الدين
+                    معه إلى دمشق، فأشار سلار بإقامة الشيخ بمصر عنده ليرى الناس
+                    فضله وعلمه وينتفع الناس به ويشتغلوا عليه.. <br /><br />قال
+                    البرزالي: وفي شوال منها شكا الصوفية بالقاهرة على الشيخ تقي
+                    الدين وكلموه في ابن عربي وغيره إلى الدولة، فردوا الأمر في
+                    ذلك إلى القاضي الشافعي، فعقد له مجلس وادعى عليه ابن عطاء
+                    بأشياء، فلم يثبت عليه منها شيء... ثم إن الدولة خيروه بين
+                    أشياء، إما أن يسير إلى دمشق أو الإسكندرية بشروط، أو الحبس
+                    فاختار الحبس
+                  </p>
+                </div>
+              </div>
+              <p class="mb-3">
+                وهذه المناظرة المزعومة ذكرتها جريدة المسلم الصادرة عن العشيرة
+                المحمدية بالقاهرة، وذكرها السيد الجميلي في كتابه مناظرات ابن
+                تيمية مع فقهاء عصره، كلاهما نقلاً عن الكاتب المسرحي اليساري عبد
+                الرحمن الشرقاوي في كتابه ابن تيمية الفقيه المعذب ص 202: 210. وقد
+                ذكر الشرقاوي ما سبق نقل بعضه عن ابن كثير مع زيادات كثيرة لا أدري
+                من أين أتى بها، دون إحالة لأي مصدر تاريخي، وهذا شأنه في الكتاب
+                كله انظر ابن تيمية الفقيه المعذب ص 193: 200. وقد سبق ذكر نبذة عن
+                ابن عطاء الله السكندري وعن كتابه الحكم في الفتوى: 57583،
+                والفتوى: 57513. والله أعلم.
+              </p>
+              <hr />
+              <div class="d-flex flex-row-reverse justify-content-between">
+                <div>
+                  عبود نجم وثلالة اخرون اعجبوا بهذه المدونة
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="d-flex gap-2 gray-color">
+                  <i class="fa-brands fa-facebook-f"></i
+                  ><i class="fa-brands fa-x-twitter"></i
+                  ><i class="fa-solid fa-basketball"></i
+                  ><i class="fa-brands fa-behance"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
     <!-- footer -->
     <footer>
       <div class="container">
         <div
-          class="row py-5 gap-2 text-sm-start text-center align-items-sm-start"
+          class="row py-5 gap-2 text-sm-start text-center align-items-sm-start flex-row-reverse"
         >
           <div
-            class="col-lg-3 col-sm-12 d-flex flex-column align-items-lg-start align-items-center"
+            class="col-lg-3 col-sm-12 d-flex flex-column align-items-lg-end align-items-center"
           >
             <div
-              class="footer-logo d-flex justify-content-start gap-1 align-items-center"
+              class="footer-logo d-flex justify-content-end gap-1 align-items-center"
             >
+              <span class="span2-logo fw-bold">حمادة</span>
+              <span class="span1-logo"> مكتبة</span>
               <svg
                 class="hamada-logo-svg"
                 xmlns="http://www.w3.org/2000/svg"
@@ -653,12 +587,9 @@
                   />
                 </g>
               </svg>
-              <span class="fw-bold">HAMADA </span>
-              <span> BookShop</span>
             </div>
-            <span class="footer-info">
-              Get the breathing space now, and we’ll extend your term at the
-              other end year for go.
+            <span class="footer-info text-end py-2">
+              منصاتنا على مواقع التواصل الاجتماعي
             </span>
             <div
               class="social-media gap-3 d-flex flex-sm-row align-items-center justify-content-start"
@@ -677,65 +608,64 @@
               ></a>
             </div>
           </div>
-          <div class="col-lg-6 col-sm-8 row text-sm-start text-center">
-            <span class="fw-bold">Book Category</span>
+          <div class="col-lg-6 col-sm-8 row text-sm-end text-center">
+            <span class="fw-bold">اصناف الكتب</span>
             <div class="col flex-column">
-              <ul class="flex-column nav text-center text-sm-start">
+              <ul class="flex-column nav text-center text-sm-end">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">History</a>
+                  <a href="#" class="nav-link">فقهية</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Horror - Thriller</a>
+                  <a href="#" class="nav-link">تزكوية</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Love Stories</a>
+                  <a href="#" class="nav-link">الحديث</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Science Fiction</a>
+                  <a href="#" class="nav-link">الايمانية</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Business</a>
+                  <a href="#" class="nav-link">الرد على الفرقة الراقصة</a>
                 </li>
               </ul>
             </div>
             <div class="col flex-column">
-              <ul class="flex-column nav text-center text-sm-start">
+              <ul class="flex-column nav text-center text-sm-end">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Biography</a>
+                  <a href="#" class="nav-link">الرد على اللطيمة</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Astrology</a>
+                  <a href="#" class="nav-link">التفسير</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Digital Marketing</a>
+                  <a href="#" class="nav-link">الفكرية</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Software Development</a>
+                  <a href="#" class="nav-link">الفتاوي</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Ecommerce</a>
+                  <a href="#" class="nav-link">العقيدة</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-4 text-center">
-            <span class="fw-bold pe-0 pe-sm-2">Site Map</span>
+          <div class="col-lg-3 col-sm-4 text-sm-end text-center">
+            <span class="fw-bold pe-0 pe-sm-2">الاخرى</span>
             <div class="col row flex-column">
-              <ul class="flex-column align-content-center nav text-sm-start">
+              <ul
+                class="flex-column align-content-center align-content-sm-end nav text-center text-sm-end"
+              >
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Home</a>
+                  <a href="../pages/about.html" class="nav-link">من نحن</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">About Us</a>
+                  <a href="#" class="nav-link">تواصل معنا</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">FAQs</a>
+                  <a href="#" class="nav-link">المدونة</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Contact</a>
+                  <a href="#" class="nav-link">الاسئلة المتكررة</a>
                 </li>
               </ul>
             </div>
