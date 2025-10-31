@@ -274,7 +274,7 @@
           class="container rounded-5 bg-my-primary py-sm-5 py-3 justify-content-end px-sm-5 px-3"
         >
           <div
-            class="flex-sm-row align-items-center d-flex flex-column justify-content-center"
+            class="flex-sm-row-reverse align-items-center d-flex flex-column justify-content-center"
           >
             <div class="book-img col-sm-4 col-12 p-0">
               <img
@@ -284,7 +284,7 @@
               />
             </div>
             <div
-              class="book-info text-white text-center text-sm-start col-sm-8 col-12 d-flex flex-column px-3"
+              class="book-info text-white text-center text-sm-end col-sm-8 col-12 d-flex flex-column px-3"
             >
               <div class="hero-book-title mb-3">
                 <h3>اعلام الموقعين</h3>
@@ -292,13 +292,17 @@
               </div>
 
               <div
-                class="my-book-review d-flex flex-column align-items-sm-start align-items-center"
+                class="my-book-review d-flex flex-column align-items-sm-end align-items-center"
               >
                 <span
                   class="fs-1 fw-bold my-book-price align-items-center d-flex justify-content-center"
                   >$50.00</span
                 >
                 <div class="d-flex gap-2 py-2">
+                  <span class="my-book-reviews-number"
+                    >(<span class="book-reviews-number">120</span>
+                    المراجعات)</span
+                  >
                   <div class="my-book-rating">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -306,17 +310,15 @@
                     <i class="fa-solid fa-star-half-stroke"></i>
                     <i class="fa-regular fa-star"></i>
                   </div>
-
-                  <span class="my-book-reviews-number"
-                    >(<span class="book-reviews-number">120</span> Review)</span
-                  >
                 </div>
 
-                <div class="d-flex gap-2">
-                  <button class="my-book-btn btn rounded-5 fw-normal">Add to card</button>
-                  <button class=" share-btn  btn rounded-5 py-2">
+                <div class="d-flex gap-2">                  <button class="share-btn btn rounded-5 py-2">
                     <i class="fa-solid fa-share-nodes"></i>
                   </button>
+                  <button class="my-book-btn btn rounded-5 fw-normal">
+                    اضف الى السلة
+                  </button>
+
                 </div>
               </div>
             </div>
