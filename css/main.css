@@ -353,14 +353,14 @@ footer .nav-link:hover {
   background-color: var(--my-primary);
   color: white !important;
   padding: 0.7rem 2rem;
-  left: 40px;
+  right:  40px;
   top: -70px;
 }
 .blog-date:hover {
   background-color: transparent;
   color: var(--my-primary) !important;
   padding: 0.7rem 2rem;
-  left: 40px;
+  right: 40px;
   top: -70px;
 }
 .blogs-section a {
