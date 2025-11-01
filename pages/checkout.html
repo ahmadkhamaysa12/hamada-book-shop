@@ -281,197 +281,301 @@
           <h2
             class="position-absolute top-50 start-50 translate-middle text-white display-4 fw-bold"
           >
-           السلة
+            الدفع
           </h2>
         </div>
       </section>
 
-      <section class="cart">
+      <section class="checkout-sec my-5">
         <div class="container">
-          <div
-            class="row align-items-center pt-4 text-sm-end text-center flex-row-reverse"
-          >
-            <div class="col-sm-6 col-12"><p>الكتاب</p></div>
-            <div class="col-sm-2 col-4"><p>سعر الواحد</p></div>
-            <div class="col-sm-2 col-4"><p>الكمية</p></div>
-            <div class="col-sm-2 col-4"><p>السعر الكلي</p></div>
-          </div>
-          <div
-            class="row align-items-center py-4 text-sm-end text-center flex-row-reverse"
-          >
-            <div
-              class="col-sm-6 col-12 d-flex align-items-center justify-content-sm-end justify-content-evenly gap-3"
-            >
-              <h5>اعلام الموقعين</h5>
-              <img
-                src="../images/books/اعلام الموقعين.webp"
-                alt=""
-                class="w-25"
-              />
+          <div class="login-checkout text-end">
+            <div class="text-end bg-light-pink py-2 px-4">
+              <span>هل لديك حساب ؟</span>
             </div>
-            <div class="col-sm-2 col-4"><span>$360.00</span></div>
-
-            <div class="col-sm-2 col-4">
-              <div class="row p-2">
-                <div class="col-6 d-flex flex-column p-0">
-                  <button
-                    class="btn btn-outline-secondary rounded-0"
-                    type="button"
-                    id="button-plus"
-                  >
-                    +
-                  </button>
-                  <button
-                    class="btn btn-outline-secondary rounded-0"
-                    type="button"
-                    id="button-minus"
-                  >
-                    -
-                  </button>
+            <div class="py-2 px-4">
+              <p>
+                اذا اشتريت منا من قبل ادخل بياناتك هنا, وان كنت زبون جديد الرجاء
+                تعبئة بيانات الشراء في الاسفل
+              </p>
+            </div>
+            <div class="row justify-content-end align-items-center">
+              <div class="row col-12 justify-content-end">
+                <div class="col-4">
+                  <input
+                    type="text"
+                    class="form-control text-end"
+                    placeholder="كلمة المرور"
+                    aria-label="password"
+                  />
                 </div>
+                <div class="col-4">
+                  <input
+                    type="text"
+                    class="form-control text-end"
+                    placeholder="اسم المستخدم"
+                    aria-label="username"
+                  />
+                </div>
+              </div>
 
-                <input
-                  type="text"
-                  class="text-center col-6 rounded-0"
-                  value="5"
-                  id="quantity"
-                />
+              <div
+                class="d-flex gap-3 align-items-center my-3 justify-content-end"
+              >
+                <a
+                  href="./signup.html"
+                  class="text-decoration-none color-my-primary"
+                  >انشأ حساب من هنا
+                </a>
+                <button class="my-btn-primary">تسجيل الدخول</button>
               </div>
             </div>
-            <div class="col-sm-2 col-4"><span>$720.00</span></div>
           </div>
-          <hr />
-          <div
-            class="row align-items-center py-4 text-sm-end text-center flex-row-reverse"
-          >
-            <div
-              class="col-sm-6 col-12 d-flex align-items-center justify-content-sm-end justify-content-evenly gap-3"
-            >
-              <h5>اعلام الموقعين</h5>
-              <img
-                src="../images/books/اعلام الموقعين.webp"
-                alt=""
-                class="w-25"
-              />
+          <div class="coupon-checkout text-end">
+            <div class="text-end bg-light-pink py-2 px-4">
+              <span>هل لديك قسيمة ؟</span>
             </div>
-            <div class="col-sm-2 col-4"><span>$360.00</span></div>
-
-            <div class="col-sm-2 col-4">
-              <div class="row p-2">
-                <div class="col-6 d-flex flex-column p-0">
-                  <button
-                    class="btn btn-outline-secondary rounded-0"
-                    type="button"
-                    id="button-plus"
-                  >
-                    +
-                  </button>
-                  <button
-                    class="btn btn-outline-secondary rounded-0"
-                    type="button"
-                    id="button-minus"
-                  >
-                    -
-                  </button>
+            <div class="row justify-content-end align-items-center">
+              <div class="row col-12 justify-content-end pt-3">
+                <div class="col-4">
+                  <input
+                    type="text"
+                    class="form-control text-end"
+                    placeholder="ادخل القسيمة"
+                    aria-label="coupon"
+                  />
                 </div>
+              </div>
 
-                <input
-                  type="text"
-                  class="text-center col-6 rounded-0"
-                  value="5"
-                  id="quantity"
-                />
+              <div class="my-3">
+                <button class="my-btn-primary">فعل القسيمة</button>
               </div>
             </div>
-            <div class="col-sm-2 col-4"><span>$720.00</span></div>
           </div>
-          <hr />
-          <div class="d-flex gap-5 justify-content-end">
-            <button class="my-btn-primary">اغلق القسيمة</button>
-            <button class="my-btn-primary">حدث السلة</button>
-          </div>
-          <hr />
-          <div class="row justify-content-end text-end">
-            <span class="col-6 col-md-1">$2160.00</span>
-            <span class="col-6 col-md-2"> المجموع الكلي</span>
-          </div>
-          <hr />
-          <div class="row justify-content-end">
-            <div class="col-4">
-              <form action="">
-                <fieldset
-                  class="row mb-3 flex-row-reverse justify-content-end text-end"
-                >
-                  <legend class="col-form-label pt-0">طريقة الشحن</legend>
-                  <div class="col-sm-10">
-                    <div class="">
-                      <label class="form-check-label" for="gridRadios1">
-                        مجاني
-                      </label>
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gridRadios"
-                        id="gridRadios1"
-                        value="option1"
-                      />
-                    </div>
-                    <div class="">
-                      <label class="form-check-label" for="gridRadios1">
-                        5$ :شحن عادي</label
-                      >
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gridRadios"
-                        id="gridRadios1"
-                        value="option1"
-                      />
-                    </div>
-                    <div class="">
-                      <label class="form-check-label" for="gridRadios1">
-                        5$: شحن سريع</label
-                      >
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gridRadios"
-                        id="gridRadios1"
-                        value="option1"
-                      />
-                    </div>
+          <div class="billing-details row flex-row-reverse">
+            <div class="col-12 col-lg-8">
+              <form class="row g-3 flex-row-reverse text-end">
+                <div><h3>معلومات الدفع</h3></div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    placeholder="الاسم الاول"
+                    class="form-control text-end"
+                    id="firstname"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="password"
+                    class="form-control text-end"
+                    id="lastname"
+                    placeholder="الاسم الاخير"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control text-end"
+                    id="inputAddress"
+                    placeholder="اسم الشركة"
+                  />
+                </div>
+                <div class="col-sm-6 col-12">
+                  <input
+                    type="text"
+                    class="form-control text-end"
+                    id="phonenumber"
+                    placeholder="رقم الهاتف"
+                  />
+                </div>
+                <div class="col-sm-6 col-12">
+                  <input
+                    type="text"
+                    placeholder="البريد الاكتروني"
+                    class="form-control text-end"
+                    id="email"
+                  />
+                </div>
+                <div class="col-12">
+                  <select id="country" class="form-select text-end">
+                    <option selected>الدولة</option>
+                    <option>سوريا</option>
+                    <option>الاردن</option>
+                    <option>مصر</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control text-end"
+                    id="Address1"
+                    placeholder="العنوان 1"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control text-end"
+                    id="Address2"
+                    placeholder="العنوان 2"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control text-end"
+                    id="inputAddress"
+                    placeholder="المدينة/البلدة"
+                  />
+                </div>
+                <div class="col-12">
+                  <select id="country" class="form-select text-end">
+                    <option selected>المنطقة السكنية/القرية</option>
+                    <option>حارة النجم</option>
+                    <option>حارة المدارس</option>
+                    <option>حارة الخمايسة</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control text-end"
+                    id="inputAddress"
+                    placeholder="الرمز البريدي"
+                  />
+                </div>
+
+                <div class="col-12">
+                  <div class="">
+                    <label class="form-check-label" for="gridCheck">
+                      انشئ حساب ؟ </label
+                    ><input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="gridCheck"
+                    />
                   </div>
-                </fieldset>
+                </div>
+                <div><h3>معلومات الشحن</h3></div>
+                <div class="col-12">
+                  <div class="">
+                    <label class="form-check-label" for="gridCheck">
+                      الشحن الى عنوان مختلف ؟ </label
+                    ><input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="gridCheck"
+                    />
+                  </div>
+                </div>
+                <textarea class="text-end mb-3" placeholder="اضافة ملاحضات" id=""></textarea>
               </form>
-              <select
-                class="form-select text-end my-3"
-                aria-label="Default select example"
-              >
-                <option selected class="text-end">الدولة</option>
-                <option value="1" class="text-end">سوريا</option>
-                <option value="2" class="text-end">الاردن</option>
-                <option value="3" class="text-end">مصر</option>
-              </select>
-              <select
-                class="form-select text-end my-3"
-                aria-label="Default select example"
-              >
-                <option selected class="text-end">المحافظة</option>
-                <option value="1" class="text-end">ادلب</option>
-                <option value="2" class="text-end">حلب</option>
-                <option value="3" class="text-end">القاهرة</option>
-              </select>
-              <input
-                class="form-control shadow-none text-end"
-                type="text"
-                placeholder="الرمز البريدي"
-              />
             </div>
-          </div>
-          <hr />
-          <div class="d-flex gap-5 justify-content-end">
-            <button class="my-btn-primary">اكمال التسوق</button>
-            <button class="my-btn-primary">اتمام الدفع</button>
+            <div class="col-12 col-lg-4 text-end p-4 bg-light-pink">
+              <div><h3>طلبك</h3></div>
+              <hr />
+              <div
+                class="d-flex align-items-center justify-content-between flex-row-reverse"
+              >
+                <span class="gray-color">المنتج</span>
+                <span class="gray-color"> السعر الكلي</span>
+              </div>
+              <hr class="gray-color" />
+              <div
+                class="d-flex align-items-center justify-content-between flex-row-reverse"
+              >
+                <span class="gray-color">الداء والدواء</span>
+                <span>x02</span>
+                <span class="gray-color"> 750$</span>
+              </div>
+              <hr class="gray-color" />
+              <div
+                class="d-flex align-items-center justify-content-between flex-row-reverse"
+              >
+                <span class="gray-color">الفوائد</span>
+                <span>x02</span>
+                <span class="gray-color"> 520$</span>
+              </div>
+              <hr class="gray-color" />
+              <div
+                class="d-flex align-items-center justify-content-between flex-row-reverse"
+              >
+                <span class="gray-color">اعلام الموقعين</span>
+                <span>x02</span>
+                <span class="gray-color"> 10$</span>
+              </div>
+              <hr />
+              <div
+                class="d-flex align-items-center justify-content-between flex-row-reverse"
+              >
+                <span>السعر الكلي للطلب</span>
+                <span class="gray-color">1280$</span>
+              </div>
+              <hr />
+              <div
+                class="d-flex align-items-center justify-content-between flex-row-reverse"
+              >
+                <span>الشحن</span>
+                <span class="gray-color"> 10$</span>
+              </div>
+              <hr />
+              <div
+                class="d-flex align-items-center justify-content-between flex-row-reverse"
+              >
+                <span>السعر الكلي</span>
+                <span>1290$</span>
+              </div>
+              <hr />
+              <div>
+                <label class="form-check-label" for="gridCheck">
+                  الدفع عن طريق التحويل البنكي</label
+                ><input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+              </div>
+
+              <div
+                class="bg-white pb-1 p-3 align-items-center accordion-body mt-3"
+              >
+                <p>تأكد من انك ادخلت جميع البيانات بشكل صحيح</p>
+              </div>
+
+              <div class="mt-3">
+                <label class="form-check-label" for="gridCheck">
+                  الدفع عن طريق البطاقة</label
+                ><input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+              </div>
+              <div class="bg-white pb-1 p-3 align-items-center mt-3">
+                <p>تأكد من انك ادخلت جميع البيانات بشكل صحيح</p>
+              </div>
+              <div class="mt-3">
+                <label class="form-check-label" for="gridCheck">
+                  الدفع عند الاستلام</label
+                ><input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+              </div>
+              <div class="bg-white pb-1 p-3 align-items-center mt-3">
+                <p>تأكد من انك ادخلت جميع البيانات بشكل صحيح</p>
+              </div>
+              <div class="mt-3">
+                <label class="form-check-label" for="gridCheck">
+                  <span>اوافق على شروط والاحكام </span><a href="#" class="text-decoration-none color-my-primary">الشروط والاحكام</a></label
+                ><input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+              </div>
+              <div class="mt-3"><button class="my-btn-primary w-100">انهاء الدفع</button></div>
+            </div>
           </div>
         </div>
       </section>
